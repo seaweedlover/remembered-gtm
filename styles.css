@@ -1,0 +1,82 @@
+/* brand colors */
+:root {
+    --dark-purple: #42244A;
+    --cream: #F5E8C7;
+    --rose: #AC7088;
+    --peach: #DEB6AB;
+    --off-white: rgba(255,255,255,0.8);
+    --white: #FFFFFF;
+}
+
+/* global styles */
+body {
+    background-color: var(--dark-purple);
+}
+
+/* sticky menu */
+div#menu {
+    width:100%;
+    background-color: var(--dark-purple);
+    color: var(--cream);
+    padding: 20px;
+}
+
+/* section: hero */
+div#hero {
+    background-color: #42244A;
+    padding: 50px 0px 100px 0px;
+}
+
+div#hero div.copy {
+    text-align: left;
+}
+
+div#hero div.image {
+    text-align: center;
+}
+
+div#hero h1 {
+    color: var(--cream);
+    padding-bottom: 30px;
+    line-height: 1.5;
+}
+
+div#hero h3 {
+    color: var(--off-white);
+    line-height: 1.68;
+}
+
+div#hero img#hero_img {
+    max-height: 750px;
+}
+
+/* section: feature 1 */
+div#feature-1 {
+    background-color: var(--cream);
+    color: var(--dark-purple);
+}
+
+/* section: calendar */
+div#calendar {
+    background-color: var(--rose);
+    color: var(--off-white);
+}
+
+
+/* section: movie view */
+div#movie-view {
+    background-color: var(--white);
+    color: var(--dark-purple);
+}
+
+/* section: supported apps */
+div#supported-apps {
+    background-color: var(--cream);
+    color: var(--dark-purple);
+}
+
+/* section: sign up */
+div#sign-up {
+    background-color: var(--dark-purple);
+    color: var(--cream);
+}
