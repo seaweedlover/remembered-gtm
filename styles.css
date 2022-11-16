@@ -55,6 +55,16 @@ div#hero img#hero_img {
 div#feature-1 {
     background-color: var(--cream);
     color: var(--dark-purple);
+    padding: 100px 0px 100px 0px;
+}
+
+div#feature-1 div.image {
+    text-align: center;
+}
+
+div#feature-1 h3 {
+    line-height: 1.68;
+    padding: 50px 0px 50px 50px;
 }
 
 /* section: calendar */
