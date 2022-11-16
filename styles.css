@@ -2,6 +2,7 @@
 :root {
     --dark-purple: #42244A;
     --cream: #F5E8C7;
+    --sand: #ECCCB2;
     --rose: #AC7088;
     --peach: #DEB6AB;
     --off-white: rgba(255,255,255,0.8);
@@ -24,7 +25,7 @@ div#menu {
 /* section: hero */
 div#hero {
     background-color: #42244A;
-    padding: 50px 0px 100px 0px;
+    padding: 100px 0px 100px 0px;
 }
 
 div#hero div.copy {
