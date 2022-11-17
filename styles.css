@@ -48,19 +48,47 @@ div#hero h3 {
 }
 
 div#hero img#hero_img {
-    max-height: 750px;
+    max-height: 700px;
 }
 
 /* section: feature 1 */
 div#feature-1 {
     background-color: var(--cream);
     color: var(--dark-purple);
+    padding: 100px 0px 100px 0px;
+}
+
+div#feature-1 div.image {
+    text-align: center;
+}
+
+div#feature-1 img#import_img {
+    max-height: 550px;
+}
+
+div#feature-1 h3 {
+    line-height: 1.68;
+    padding: 50px 0px 50px 50px;
 }
 
 /* section: calendar */
 div#calendar {
     background-color: var(--rose);
     color: var(--off-white);
+    padding: 100px 0px 100px 0px;
+}
+
+div#calendar img#calendar_img {
+    max-height: 550px;
+}
+
+div#calendar img#contact_img {
+    max-height: 400px;
+}
+
+div#calendar h3 {
+    line-height: 1.68;
+    padding: 50px 0px 50px 50px;
 }
 
 
@@ -68,12 +96,28 @@ div#calendar {
 div#movie-view {
     background-color: var(--white);
     color: var(--dark-purple);
+    padding: 100px 0px 100px 0px;
+}
+
+div#movie-view h3 {
+    line-height: 1.68;
+    padding: 50px 0px 50px 50px; 
 }
 
 /* section: supported apps */
 div#supported-apps {
     background-color: var(--cream);
     color: var(--dark-purple);
+    padding: 100px 0px 100px 0px;
+}
+
+div#supported-apps h3{
+    text-align: center;
+}
+
+div#supported-apps img#supported_apps_img {
+    max-width: 850px;
+    padding: 50px 0px 0px 0px;
 }
 
 /* section: sign up */
