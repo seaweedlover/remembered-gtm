@@ -119,7 +119,7 @@
   <div class="grid-y" id="sign-up">
     <div class="grid-container">
       <h2>100% FREE DURING BETA</h2>
-      <form name="emaill-address" method="POST" netlify>
+      <form name="email-address" method="POST" netlify>
         <div class="grid-x grid-margin-x">
           <div class="input-group">
             <input class="input-group-field" type="email" placeholder="Your email address...">
@@ -129,6 +129,27 @@
       </form>
     </div>
   </div>
+
+  <form name="contact" method="POST" data-netlify="true">
+    <p>
+      <label>Your Name: <input type="text" name="name" /></label>
+    </p>
+    <p>
+      <label>Your Email: <input type="email" name="email" /></label>
+    </p>
+    <p>
+      <label>Your Role: <select name="role[]" multiple>
+        <option value="leader">Leader</option>
+        <option value="follower">Follower</option>
+      </select></label>
+    </p>
+    <p>
+      <label>Message: <textarea name="message"></textarea></label>
+    </p>
+    <p>
+      <button type="submit">Send</button>
+    </p>
+  </form>
 
   <!-- JAVASCRIPT -->
   <script src="foundation/js/vendor/jquery.js"></script>
