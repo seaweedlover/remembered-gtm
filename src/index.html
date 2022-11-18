@@ -21,8 +21,7 @@
         REMEMBERED
       </div>
       <div class="title-bar-right">
-        <a href="#feature-1" class="button">Features</a>
-        <a href="#sign-up" class="button">Sign Up</a>
+        <a href="#sign-up" class="button light-button">Sign Up</a>
       </div>
     </div>
   </div>
@@ -32,13 +31,13 @@
     <div class="cell">
       <div class="grid-container">
         <div class="grid-x grid-margin-x">
-          <div class="cell large-4 copy">
+          <div class="cell large-5 copy">
             <h1>Digital memories are forever</h1>
             <h3>View exported messages across major chat apps beautifully in one place.</h3>
-            <a href="#sign-up" class="button expanded">Save Memories</a>
-            <h4>100% free during beta</h4>h4>
+            <a href="#sign-up" class="button expanded light-button">Save Memories</a>
+            <h4>100% free during beta</h4>
           </div>
-          <div class="cell large-8 image">
+          <div class="cell large-7 image">
             <img id="hero_img" src="assets/hero.png" alt="image of remembered app">
           </div>
         </div>
@@ -57,7 +56,7 @@
         <div class="cell large-4 copy">
           <h3>Encrypt your imported chat history & own your data locally</h3>
           <h3>Nothing is sent over the web or stored on a server</h3>
-          <a href="#sign-up" class="button expanded">Import Memories</a>
+          <a href="#sign-up" class="button expanded dark-button">Import Memories</a>
         </div>
         <div class="cell large-1 copy"></div>
       </div>
@@ -68,11 +67,14 @@
   <div class="grid-y" id="calendar">
     <div class="grid-container">
       <div class="grid-x grid-margin-x">
+        <div class="cell medium-8 image show-for-small-only">
+          <img id="calendar_img" src="assets/calendar-selector.png" alt="selecting chat by date in the app">
+        </div>
         <div class="cell medium-4 copy">
           <h3>View messages chronologically & search by date for each contact or group</h3>
-          <a href="#sign-up" class="button expanded">View Memories</a>
+          <a href="#sign-up" class="button expanded light-button">View Memories</a>
         </div>
-        <div class="cell medium-8 image">
+        <div class="cell medium-8 image hide-for-small-only">
           <img id="calendar_img" src="assets/calendar-selector.png" alt="selecting chat by date in the app">
         </div>
       </div>
@@ -83,15 +85,14 @@
   <div class="grid-y" id="movie-view">
     <div class="grid-container">
       <div class="grid-x grid-margin-x">
-        <div class="cell large-6 image">
+        <div class="cell large-7 image">
           <img id="memory_img" src="assets/memory-movies.png" alt="image of memory movies in the app">
         </div>
-        <div class="cell large-1 copy"></div>
+        <div class="cell large-1"></div>
         <div class="cell large-4 copy">
           <h3>Reminisce with our unique memory movies.</h3>
-          <a href="#sign-up" class="button expanded">Relive Memories</a>
+          <a href="#sign-up" class="button expanded dark-button">Relive Memories</a>
         </div>
-        <div class="cell large-1 copy"></div>
       </div>
     </div>
   </div>
@@ -99,17 +100,17 @@
   <!-- SECTION: SUPPORTED APPS -->
   <div class="grid-y" id="supported-apps">
     <div class="grid-container grid-margin-y">
-      <h2>Supports Major Chat Apps</h2>
-      <img id="supported_apps_img" src="assets/supported-apps.png" alt="list of supported chat apps">
-      <h4>Don't see your app? Let us know you want it supported!</h4>
-        <div class="grid-x grid-margin-x">
-          <div class="cell">
-            <form name="chat-app" method="POST" netlify>
-              <input type="text" placeholder="I use..." name="app-name">
-              <button type="submit" class="button">Submit Request</button>
-            </form>
-          </div>
+      <div class="grid-x grid-margin-x">
+        <div class="cell">
+          <h2>Supports Major Chat Apps</h2>
+          <img id="supported_apps_img" src="assets/supported-apps.png" alt="list of supported chat apps">
+          <h4>Don't see your app? Let us know you want it supported!</h4>
+          <form name="chat-app" method="POST" netlify>
+            <input type="text" placeholder="I use..." name="app-name">
+            <button type="submit" class="button dark-button">Submit Request</button>
+          </form>
         </div>
+      </div>
     </div>
   </div>
 
@@ -117,14 +118,12 @@
   <div class="grid-y" id="sign-up">
     <div class="grid-container">
       <h2>100% FREE DURING BETA</h2>
-        <div class="grid-x grid-margin-x">
-          <div class="cell">
-            <form name="email-address" method="POST" netlify>
-              <input type="email" placeholder="Your email address..." name="email">
-              <button type="submit" class="button">Sign Up</button>
-            </form>
-          </div>
-        </div>
+      <div class="grid-x grid-margin-x">
+        <form name="email-address" method="POST" netlify>
+          <input type="email" placeholder="Your email address..." name="email">
+          <button type="submit" class="button light-button">Sign Up</button>
+        </form>
+      </div>
     </div>
   </div>
 

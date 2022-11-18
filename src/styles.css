@@ -14,7 +14,61 @@ body {
     background-color: var(--dark-purple);
 }
 
-/* sticky menu */
+h1 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.35rem;
+}
+
+/* button styles */
+a.light-button {
+    background-color: var(--cream);
+    color: var(--dark-purple);
+    border-radius: 5px;
+}
+
+a.clear.light-button {
+    color: var(--cream);
+}
+
+a.dark-button {
+    background-color: var(--dark-purple);
+    color: var(--cream);
+    border-radius: 5px;
+}
+
+a.button {
+    font-size: 1.25rem;
+}
+
+button.button {
+    font-size: 1.15rem;
+}
+
+/* sticky nav menu */
+div.title-bar-right a.button {
+    font-size: .9rem;
+}
+
+button.light-button {
+    background-color: var(--cream);
+    color: var(--dark-purple);
+    border-radius: 5px; 
+}
+
+button.dark-button {
+    background-color: var(--dark-purple);
+    color: var(--cream);
+    border-radius: 5px;
+}
+
+/* sticky nav menu */
 div#menu {
     width:100%;
     background-color: var(--dark-purple);
@@ -22,10 +76,18 @@ div#menu {
     padding: 20px;
 }
 
+div#menu a.button {
+    margin: 0;
+}
+
+div.title-bar-left {
+    font-size: 1.5rem;
+}
+
 /* section: hero */
 div#hero {
     background-color: #42244A;
-    padding: 100px 0px 100px 0px;
+    padding: 2rem 0px 3rem 0px;
 }
 
 div#hero div.copy {
@@ -38,14 +100,14 @@ div#hero div.image {
 
 div#hero h1 {
     color: var(--cream);
-    padding-bottom: 30px;
+    padding-bottom: 2rem;
     line-height: 1.5;
 }
 
 div#hero h3 {
     color: var(--off-white);
     line-height: 1.68;
-    padding-bottom: 50px;
+    padding-bottom: 3rem;
 }
 
 div#hero img#hero_img {
@@ -55,6 +117,48 @@ div#hero img#hero_img {
 div#hero h4 {
     text-align: center;
     color: var(--off-white);
+}
+
+@media screen and (max-width: 40rem) {      
+    /* section: hero */
+    div#hero h1 {
+        padding-bottom: 1rem;
+    }
+
+    div#hero h3 {
+        padding-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 64rem) {
+    /* global styles */
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+    
+    h4 {
+        font-size: 1.25rem;
+    }
+
+    .grid-container {
+        max-width: 45rem;
+    }
+    .button {
+        font-size: 1.1rem;
+    }
+    
+    /* section: hero */
+    div#hero h1 {
+        padding-bottom: 1rem;
+    }
+
+    div#hero h3 {
+        padding-bottom: 2rem;
+    }
 }
 
 /* section: feature 1 */
