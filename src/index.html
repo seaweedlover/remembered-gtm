@@ -45,10 +45,10 @@
     </div>
   </div>
 
-  <!-- SECTION: FEATURE 1 -->
-  <div class="grid-y" id="feature-1">
+  <!-- SECTION: IMPORT -->
+  <div class="grid-y" id="import">
     <div class="grid-container">
-      <div class="grid-x grid-margin-x">
+      <div class="grid-x grid-margin-x align-middle">
         <div class="cell large-6 image">
           <img id="import_img" src="assets/import-screen.png" alt="import chat from various apps">
         </div>
@@ -67,14 +67,14 @@
   <div class="grid-y" id="calendar">
     <div class="grid-container">
       <div class="grid-x grid-margin-x">
-        <div class="cell medium-8 image show-for-small-only">
+        <div class="cell small-12 image hide-for-large">
           <img id="calendar_img" src="assets/calendar-selector.png" alt="selecting chat by date in the app">
         </div>
-        <div class="cell medium-4 copy">
+        <div class="cell large-4 copy">
           <h3>View messages chronologically & search by date for each contact or group</h3>
           <a href="#sign-up" class="button expanded light-button">View Memories</a>
         </div>
-        <div class="cell medium-8 image hide-for-small-only">
+        <div class="cell large-8 image show-for-large">
           <img id="calendar_img" src="assets/calendar-selector.png" alt="selecting chat by date in the app">
         </div>
       </div>
@@ -100,14 +100,26 @@
   <!-- SECTION: SUPPORTED APPS -->
   <div class="grid-y" id="supported-apps">
     <div class="grid-container grid-margin-y">
-      <div class="grid-x grid-margin-x">
-        <div class="cell">
-          <h2>Supports Major Chat Apps</h2>
-          <img id="supported_apps_img" src="assets/supported-apps.png" alt="list of supported chat apps">
-          <h4>Don't see your app? Let us know you want it supported!</h4>
+      <div class="cell">
+        <div class="grid-y">
+          <div class="cell">
+            <h2>Supports Major Chat Apps</h2>
+          </div>
+          <div class="cell">
+            <img id="supported_apps_img" src="assets/supported-apps.png" alt="list of supported chat apps">
+          </div>
+          <div class="cell">
+            <h4>Don't see your app? Let us know you want it supported!</h4>
+          </div>
           <form name="chat-app" method="POST" netlify>
-            <input type="text" placeholder="I use..." name="app-name">
-            <button type="submit" class="button dark-button">Submit Request</button>
+            <div class="grid-x">
+              <div class="cell medium-8">
+                <input type="text" placeholder="I use..." name="app-name">
+              </div>
+              <div class="cell medium-4">
+                <button type="submit" class="button dark-button">Submit Request</button>
+              </div>
+            </div>
           </form>
         </div>
       </div>

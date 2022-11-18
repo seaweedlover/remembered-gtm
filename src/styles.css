@@ -1,5 +1,6 @@
 /* brand colors */
 :root {
+    --black-purple: rgb(54, 22, 61);
     --dark-purple: #42244A;
     --cream: #F5E8C7;
     --sand: #ECCCB2;
@@ -43,19 +44,6 @@ a.dark-button {
     border-radius: 5px;
 }
 
-a.button {
-    font-size: 1.25rem;
-}
-
-button.button {
-    font-size: 1.15rem;
-}
-
-/* sticky nav menu */
-div.title-bar-right a.button {
-    font-size: .9rem;
-}
-
 button.light-button {
     background-color: var(--cream);
     color: var(--dark-purple);
@@ -68,10 +56,24 @@ button.dark-button {
     border-radius: 5px;
 }
 
+a.button {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+button.button {
+    font-size: 1.15rem;
+    text-align: center;
+}
+
 /* sticky nav menu */
+div.title-bar-right a.button {
+    font-size: .9rem;
+}
+
 div#menu {
     width:100%;
-    background-color: var(--dark-purple);
+    background-color: var(--black-purple);
     color: var(--cream);
     padding: 20px;
 }
@@ -117,66 +119,25 @@ div#hero img#hero_img {
 div#hero h4 {
     text-align: center;
     color: var(--off-white);
+    padding-bottom: 2rem;
 }
 
-@media screen and (max-width: 40rem) {      
-    /* section: hero */
-    div#hero h1 {
-        padding-bottom: 1rem;
-    }
-
-    div#hero h3 {
-        padding-bottom: 2rem;
-    }
-}
-
-@media screen and (max-width: 64rem) {
-    /* global styles */
-    h1 {
-        font-size: 2rem;
-    }
-    
-    h3 {
-        font-size: 1.5rem;
-    }
-    
-    h4 {
-        font-size: 1.25rem;
-    }
-
-    .grid-container {
-        max-width: 45rem;
-    }
-    .button {
-        font-size: 1.1rem;
-    }
-    
-    /* section: hero */
-    div#hero h1 {
-        padding-bottom: 1rem;
-    }
-
-    div#hero h3 {
-        padding-bottom: 2rem;
-    }
-}
-
-/* section: feature 1 */
-div#feature-1 {
+/* section: import */
+div#import {
     background-color: var(--cream);
     color: var(--dark-purple);
     padding: 100px 0px 100px 0px;
 }
 
-div#feature-1 div.image {
+div#import div.image {
     text-align: center;
 }
 
-div#feature-1 img#import_img {
+div#import img#import_img {
     max-height: 400px;
 }
 
-div#feature-1 h3 {
+div#import h3 {
     line-height: 1.5;
     padding-bottom: 20px;
 }
@@ -229,11 +190,7 @@ div#supported-apps {
     padding: 100px 0px 100px 0px;
 }
 
-div#supported-apps h2{
-    text-align: center;
-}
-
-div#supported_apps div.image {
+div#supported-apps {
     text-align: center;
 }
 
@@ -256,4 +213,51 @@ div#sign-up {
 
 div#sign-up h2{
     padding-bottom: 50px;
+}
+
+@media screen and (max-width: 40rem) {      
+    /* section: hero */
+    div#hero h1 {
+        padding-bottom: 1rem;
+    }
+
+    div#hero h3 {
+        padding-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 64rem) {
+    /* global styles */
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+    
+    h4 {
+        font-size: 1.25rem;
+    }
+
+    .grid-container {
+        max-width: 45rem;
+    }
+    .button {
+        font-size: 1.1rem;
+    }
+    
+    /* section: hero */
+    div#hero h1 {
+        padding-bottom: 1rem;
+    }
+
+    div#hero h3 {
+        padding-bottom: 2rem;
+    }
+
+    /* section: import */
+    div#import div.image {
+        margin-bottom: 3rem;
+    }
 }
