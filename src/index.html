@@ -34,7 +34,7 @@
           <div class="cell large-5 copy">
             <h1>Digital memories are&nbsp;forever</h1>
             <h3>View exported messages across major chat apps beautifully in one place.</h3>
-            <a href="#sign-up" class="button expanded light-button">Save Memories</a>
+            <a href="#sign-up" class="button light-button">Save Memories</a>
             <h4>🎊 100% free during beta 🎉</h4>
           </div>
           <div class="cell large-7 image">
@@ -50,11 +50,10 @@
     <div class="cell">
       <div class="grid-container">
         <div class="grid-x grid-margin-x align-middle">
-          <div class="cell large-6 image">
+          <div class="cell large-7 image">
             <img id="import_img" src="assets/import-screen.png" alt="import chat from various apps">
           </div>
-          <div class="cell large-1 copy"></div>
-          <div class="cell large-4 copy">
+          <div class="cell large-5 copy">
             <div class="grid-y grid-margin-y">
               <div class="cell">
                 <h3>Encrypt your imported chat history & own your data locally</h3>
@@ -63,11 +62,10 @@
                 <h3>Nothing is sent over the web or stored on a server</h3>
               </div>
               <div class="cell">
-                <a href="#sign-up" class="button expanded dark-button">Import Memories</a>
+                <a href="#sign-up" class="button dark-button">Import Memories</a>
               </div>
             </div>
           </div>
-          <div class="cell large-1 copy"></div>
         </div>
       </div>
     </div>
@@ -89,8 +87,8 @@
               <div class="cell">
                 <h3>Search by date for each contact or group</h3>
               </div>
-              <div class="cell button-cell">
-                <a href="#sign-up" class="button expanded light-button">View Memories</a>
+              <div class="cell">
+                <a href="#sign-up" class="button light-button">View Memories</a>
               </div>
             </div>
           </div>
@@ -110,8 +108,7 @@
           <div class="cell large-7 image">
             <img id="memory_img" src="assets/memory-movies.png" alt="image of memory movies in the app">
           </div>
-          <div class="cell large-1"></div>
-          <div class="cell large-4 copy">
+          <div class="cell large-5 copy">
             <div class="grid-y grid-margin-y">
               <div class="cell">
                 <h3>Reminisce with memory movies</h3>
@@ -120,7 +117,7 @@
                 <h3>Experience the joy of old conversations all over again</h3>
               </div>
               <div class="cell">
-                <a href="#sign-up" class="button expanded dark-button">Relive Memories</a>
+                <a href="#sign-up" class="button dark-button">Relive Memories</a>
               </div>
             </div>
           </div>
@@ -144,22 +141,17 @@
             <div class="cell">
               <h4>Don't see your app? Let us know you want it supported!</h4>
             </div>
-            <div class="cell">
-              <form name="chat-app" method="POST" netlify>
-                <div class="grid-x">
-                  <div class="cell medium-7">
-                    <input type="text" placeholder="I use..." name="app-name">
-                  </div>
-                  <div class="cell medium-5">
-                    <button type="submit" class="button dark-button form-button">Submit Request</button>
-                  </div>
-                </div>
-              </form>  
+            <div class="cell text-center">
+              <form name="chat-app" method="POST" id="supported-apps" netlify>
+                <input type="text" placeholder="I use..." name="app-name">
+                <button type="submit" class="button dark-button form-button">Request It!</button>
             </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
 
   <!-- SECTION: SIGN UP -->
@@ -173,12 +165,14 @@
             </div>
             <div class="cell">
               <form name="email-address" method="POST" netlify>
+                <div class="grid-x">
                   <div class="cell">
                     <input type="email" placeholder="Your email address..." name="email">
                   </div>
                   <div class="cell">
                     <button type="submit" class="button light-button form-button">Sign Up</button>
                   </div>
+                </div>
               </form>
             </div>
           </div>

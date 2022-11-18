@@ -31,16 +31,19 @@ h4 {
     font-size: 1.35rem;
 }
 
+input, input[type="text"], input[type="email"] {
+    height: 2.6rem;
+    border-radius: .5rem;
+}
+input[type="email"] {
+    display: inline-block;
+}
+
+button.button, a.button {
+    margin: 0;
+}
 
 /* button styles */
-.button.expanded {
-    max-width: 25rem;
-}
-
-.cell.button-cell {
-    text-align: center;
-}
-
 a.light-button {
     background-color: var(--cream);
     color: var(--dark-purple);
@@ -73,17 +76,19 @@ a.button {
     font-size: 1.25rem;
     text-align: center;
     font-weight: bold;
+    width: 100%;
+    max-width: 30rem;
 }
 
 button.button {
     font-size: 1.15rem;
-    text-align: center;]
+    text-align: center;
     font-weight: bold;
 }
 
 button.form-button {
-    height: 2.5rem;
-    padding-top: 0.6rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
 }
 
 /* sticky nav menu */
@@ -101,6 +106,7 @@ div#menu {
 
 div#menu a.button {
     margin: 0;
+    width: auto;
 }
 
 div.title-bar-left {
@@ -111,14 +117,6 @@ div.title-bar-left {
 div#hero {
     background-color: #42244A;
     padding: 2rem 0px 3rem 0px;
-}
-
-div#hero div.copy {
-    text-align: left;
-}
-
-div#hero div.copy a.button.expanded {
-    max-width: 35rem;
 }
 
 div#hero div.image {
@@ -204,12 +202,24 @@ div#supported-apps {
 }
 
 div#supported-apps img#supported_apps_img {
-    max-width: 40rem;
+    max-height: 6rem;
 }
 
 div#supported-apps h4{
     text-align: center;
 }
+
+form#supported-apps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form#supported-apps input {
+    max-width: 20rem;
+    margin: 0 1rem;
+}
+
 
 /* section: sign up */
 div#sign-up {
@@ -225,6 +235,13 @@ div#sign-up h2{
 
 div#sign-up input{
     max-width: 400px;
+}
+
+@media screen and (max-width: 40rem) {
+    form#supported-apps input {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
 }
 
 @media screen and (max-width: 64rem) {
@@ -249,10 +266,6 @@ div#sign-up input{
         font-size: 1.1rem;
     }
 
-    .button.expanded {
-        max-width: 40rem;
-    }
-
     div.copy h3 {
         line-height: 1;
     }
@@ -270,6 +283,11 @@ div#sign-up input{
         padding-bottom: 2rem;
     }
 
+    /* all sections */
+    div.grid-y {
+        text-align: center;
+    }
+    
     /* section: import */
     div#import div.image {
         margin-bottom: 3rem;
@@ -280,8 +298,15 @@ div#sign-up input{
         margin-bottom: 3rem;
     }
 
-    /* section: calendar */
     div#movie-view div.image {
         margin-bottom: 3rem;
+    }
+
+    /* section: supported apps */
+    form#supported-apps {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
     }
 }
