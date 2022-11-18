@@ -102,16 +102,14 @@
       <h2>Supports Major Chat Apps</h2>
       <img id="supported_apps_img" src="assets/supported-apps.png" alt="list of supported chat apps">
       <h4>Don't see your app? Let us know you want it supported!</h4>
-      <div class="grid-x grid-margin-x">
-        <div class="large-8 cell">
-          <label>
-            <input type="text" placeholder="I use...">
-          </label>
+        <div class="grid-x grid-margin-x">
+          <div class="cell">
+            <form name="chat-app" method="POST" netlify>
+              <input type="text" placeholder="I use..." name="app-name">
+              <button type="submit" class="button">Submit Request</button>
+            </form>
+          </div>
         </div>
-        <div class="large-4 cell">
-          <a href="" class="button expanded">Submit Request</a>
-        </div>
-      </div>
     </div>
   </div>
 
@@ -119,16 +117,14 @@
   <div class="grid-y" id="sign-up">
     <div class="grid-container">
       <h2>100% FREE DURING BETA</h2>
-      <div class="grid-x grid-margin-x">
-        <div class="large-8 cell">
-          <label>
-            <input type="text" placeholder="your email address...">
-          </label>
+        <div class="grid-x grid-margin-x">
+          <div class="cell">
+            <form name="email-address" method="POST" netlify>
+              <input type="email" placeholder="Your email address..." name="email">
+              <button type="submit" class="button">Sign Up</button>
+            </form>
+          </div>
         </div>
-        <div class="large-4 cell">
-          <a href="" class="button expanded">Sign Up</a>
-        </div>
-      </div>
     </div>
   </div>
 
