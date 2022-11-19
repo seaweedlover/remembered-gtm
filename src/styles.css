@@ -1,5 +1,6 @@
 /* brand colors */
 :root {
+    --black-purple: rgb(54, 22, 61);
     --dark-purple: #42244A;
     --cream: #F5E8C7;
     --sand: #ECCCB2;
@@ -14,22 +15,108 @@ body {
     background-color: var(--dark-purple);
 }
 
-/* sticky menu */
-div#menu {
-    width:100%;
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.55rem;
+}
+
+h4 {
+    font-size: 1.35rem;
+}
+
+input, input[type="text"], input[type="email"] {
+    height: 2.6rem;
+    border-radius: .5rem;
+}
+input[type="email"] {
+    display: inline-block;
+}
+
+button.button, a.button {
+    margin: 0;
+}
+
+/* button styles */
+a.light-button {
+    background-color: var(--cream);
+    color: var(--dark-purple);
+    border-radius: 30px;
+}
+
+a.clear.light-button {
+    color: var(--cream);
+}
+
+a.dark-button {
     background-color: var(--dark-purple);
     color: var(--cream);
+    border-radius: 30px;
+}
+
+button.light-button {
+    background-color: var(--cream);
+    color: var(--dark-purple);
+    border-radius: 30px; 
+}
+
+button.dark-button {
+    background-color: var(--dark-purple);
+    color: var(--cream);
+    border-radius: 30px;
+}
+
+a.button {
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    max-width: 30rem;
+}
+
+button.button {
+    font-size: 1.15rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+button.form-button {
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+
+/* sticky nav menu */
+div.title-bar-right a.button {
+    font-size: .9rem;
+    border-radius: 20px;
+}
+
+div#menu {
+    width:100%;
+    background-color: var(--black-purple);
+    color: var(--cream);
     padding: 20px;
+}
+
+div#menu a.button {
+    margin: 0;
+    width: auto;
+}
+
+div.title-bar-left {
+    font-size: 1.5rem;
 }
 
 /* section: hero */
 div#hero {
     background-color: #42244A;
-    padding: 100px 0px 100px 0px;
-}
-
-div#hero div.copy {
-    text-align: left;
+    padding: 2rem 0px 3rem 0px;
 }
 
 div#hero div.image {
@@ -38,14 +125,14 @@ div#hero div.image {
 
 div#hero h1 {
     color: var(--cream);
-    padding-bottom: 30px;
-    line-height: 1.5;
+    padding-bottom: 2rem;
+    line-height: 1.25;
 }
 
 div#hero h3 {
     color: var(--off-white);
     line-height: 1.68;
-    padding-bottom: 50px;
+    padding-bottom: 3rem;
 }
 
 div#hero img#hero_img {
@@ -55,26 +142,22 @@ div#hero img#hero_img {
 div#hero h4 {
     text-align: center;
     color: var(--off-white);
+    padding-bottom: 2rem;
 }
 
-/* section: feature 1 */
-div#feature-1 {
+/* section: import */
+div#import {
     background-color: var(--cream);
     color: var(--dark-purple);
     padding: 100px 0px 100px 0px;
 }
 
-div#feature-1 div.image {
+div#import div.image {
     text-align: center;
 }
 
-div#feature-1 img#import_img {
+div#import img#import_img {
     max-height: 400px;
-}
-
-div#feature-1 h3 {
-    line-height: 1.5;
-    padding-bottom: 20px;
 }
 
 /* section: calendar */
@@ -92,12 +175,6 @@ div#calendar img#contact_img {
     max-height: 400px;
 }
 
-div#calendar h3 {
-    line-height: 1.68;
-    padding-bottom: 50px;
-}
-
-
 /* section: movie view */
 div#movie-view {
     background-color: var(--white);
@@ -113,11 +190,6 @@ div#movie-view img#movie-view {
     max-height: 400px;
 }
 
-div#movie-view h3 {
-    line-height: 1.68;
-    padding-bottom: 50px;
-}
-
 /* section: supported apps */
 div#supported-apps {
     background-color: var(--cream);
@@ -125,31 +197,116 @@ div#supported-apps {
     padding: 100px 0px 100px 0px;
 }
 
-div#supported-apps h2{
-    text-align: center;
-}
-
-div#supported_apps div.image {
+div#supported-apps {
     text-align: center;
 }
 
 div#supported-apps img#supported_apps_img {
-    max-width: 850px;
-    padding: 50px 0px 0px 0px;
+    max-height: 6rem;
 }
 
 div#supported-apps h4{
     text-align: center;
-    padding: 50px 0px 10px 0px;
 }
+
+form#supported-apps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form#supported-apps input {
+    max-width: 20rem;
+    margin: 0 1rem;
+}
+
 
 /* section: sign up */
 div#sign-up {
     background-color: var(--dark-purple);
     color: var(--cream);
     padding: 100px 0px 100px 0px;
+    text-align: center;
 }
 
 div#sign-up h2{
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+}
+
+div#sign-up input{
+    max-width: 400px;
+}
+
+@media screen and (max-width: 40rem) {
+    form#supported-apps input {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 64rem) {
+    /* global styles */
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+    
+    h4 {
+        font-size: 1.25rem;
+    }
+
+    .grid-container {
+        max-width: 45rem;
+    }
+    
+    .button {
+        font-size: 1.1rem;
+    }
+
+    div.copy h3 {
+        line-height: 1;
+    }
+    
+    /* section: hero */
+    div#hero div.copy {
+        padding: 0 3rem 0 3rem;
+    }
+
+    div#hero div.copy h1 {
+        padding-bottom: 1rem;
+    }
+
+    div#hero div.copy h3 {
+        padding-bottom: 2rem;
+    }
+
+    /* all sections */
+    div.grid-y {
+        text-align: center;
+    }
+    
+    /* section: import */
+    div#import div.image {
+        margin-bottom: 3rem;
+    }
+
+    /* section: calendar */
+    div#calendar div.image.hide-for-large {
+        margin-bottom: 3rem;
+    }
+
+    div#movie-view div.image {
+        margin-bottom: 3rem;
+    }
+
+    /* section: supported apps */
+    form#supported-apps {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+    }
 }

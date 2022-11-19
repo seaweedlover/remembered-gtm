@@ -21,8 +21,7 @@
         REMEMBERED
       </div>
       <div class="title-bar-right">
-        <a href="#feature-1" class="button">Features</a>
-        <a href="#sign-up" class="button">Sign Up</a>
+        <a href="#sign-up" class="button light-button"><b>Sign Up</b></a>
       </div>
     </div>
   </div>
@@ -32,13 +31,13 @@
     <div class="cell">
       <div class="grid-container">
         <div class="grid-x grid-margin-x">
-          <div class="cell large-4 copy">
-            <h1>Digital memories are forever</h1>
+          <div class="cell large-5 copy">
+            <h1>Digital memories are&nbsp;forever</h1>
             <h3>View exported messages across major chat apps beautifully in one place.</h3>
-            <a href="#sign-up" class="button expanded">Save Memories</a>
-            <h4>100% free during beta</h4>h4>
+            <a href="#sign-up" class="button light-button">Save Memories</a>
+            <h4>🎊 100% free during beta 🎉</h4>
           </div>
-          <div class="cell large-8 image">
+          <div class="cell large-7 image">
             <img id="hero_img" src="assets/hero.png" alt="image of remembered app">
           </div>
         </div>
@@ -46,34 +45,56 @@
     </div>
   </div>
 
-  <!-- SECTION: FEATURE 1 -->
-  <div class="grid-y" id="feature-1">
-    <div class="grid-container">
-      <div class="grid-x grid-margin-x">
-        <div class="cell large-6 image">
-          <img id="import_img" src="assets/import-screen.png" alt="import chat from various apps">
+  <!-- SECTION: IMPORT -->
+  <div class="grid-y" id="import">
+    <div class="cell">
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x align-middle">
+          <div class="cell large-7 image">
+            <img id="import_img" src="assets/import-screen.png" alt="import chat from various apps">
+          </div>
+          <div class="cell large-5 copy">
+            <div class="grid-y grid-margin-y">
+              <div class="cell">
+                <h3>Encrypt your imported chat history & own your data locally</h3>
+              </div>
+              <div class="cell">
+                <h3>Nothing is sent over the web or stored on a server</h3>
+              </div>
+              <div class="cell">
+                <a href="#sign-up" class="button dark-button">Import Memories</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="cell large-1 copy"></div>
-        <div class="cell large-4 copy">
-          <h3>Encrypt your imported chat history & own your data locally</h3>
-          <h3>Nothing is sent over the web or stored on a server</h3>
-          <a href="#sign-up" class="button expanded">Import Memories</a>
-        </div>
-        <div class="cell large-1 copy"></div>
       </div>
     </div>
   </div>
 
   <!-- SECTION: CALENDAR -->
   <div class="grid-y" id="calendar">
-    <div class="grid-container">
-      <div class="grid-x grid-margin-x">
-        <div class="cell medium-4 copy">
-          <h3>View messages chronologically & search by date for each contact or group</h3>
-          <a href="#sign-up" class="button expanded">View Memories</a>
-        </div>
-        <div class="cell medium-8 image">
-          <img id="calendar_img" src="assets/calendar-selector.png" alt="selecting chat by date in the app">
+    <div class="cell">
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x align-middle">
+          <div class="cell small-12 image hide-for-large">
+            <img id="calendar_img" src="assets/calendar-selector.png" alt="selecting chat by date in the app">
+          </div>
+          <div class="cell large-5 copy">
+            <div class="grid-y grid-margin-y">
+              <div class="cell">
+                <h3>View messages chronologically</h3>
+              </div>
+              <div class="cell">
+                <h3>Search by date for each contact or group</h3>
+              </div>
+              <div class="cell">
+                <a href="#sign-up" class="button light-button">View Memories</a>
+              </div>
+            </div>
+          </div>
+          <div class="cell large-7 image show-for-large">
+            <img id="calendar_img" src="assets/calendar-selector.png" alt="selecting chat by date in the app">
+          </div>
         </div>
       </div>
     </div>
@@ -81,52 +102,80 @@
 
   <!-- SECTION: MOVIE VIEW -->
   <div class="grid-y" id="movie-view">
-    <div class="grid-container">
-      <div class="grid-x grid-margin-x">
-        <div class="cell large-6 image">
-          <img id="memory_img" src="assets/memory-movies.png" alt="image of memory movies in the app">
+    <div class="cell">
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x align-middle">
+          <div class="cell large-7 image">
+            <img id="memory_img" src="assets/memory-movies.png" alt="image of memory movies in the app">
+          </div>
+          <div class="cell large-5 copy">
+            <div class="grid-y grid-margin-y">
+              <div class="cell">
+                <h3>Reminisce with memory movies</h3>
+              </div>
+              <div class="cell">
+                <h3>Experience the joy of old conversations all over again</h3>
+              </div>
+              <div class="cell">
+                <a href="#sign-up" class="button dark-button">Relive Memories</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="cell large-1 copy"></div>
-        <div class="cell large-4 copy">
-          <h3>Reminisce with our unique memory movies.</h3>
-          <a href="#sign-up" class="button expanded">Relive Memories</a>
-        </div>
-        <div class="cell large-1 copy"></div>
       </div>
     </div>
   </div>
 
   <!-- SECTION: SUPPORTED APPS -->
   <div class="grid-y" id="supported-apps">
-    <div class="grid-container grid-margin-y">
-      <h2>Supports Major Chat Apps</h2>
-      <img id="supported_apps_img" src="assets/supported-apps.png" alt="list of supported chat apps">
-      <h4>Don't see your app? Let us know you want it supported!</h4>
-      <div class="grid-x grid-margin-x">
-        <div class="large-8 cell">
-          <label>
-            <input type="text" placeholder="I use...">
-          </label>
-        </div>
-        <div class="large-4 cell">
-          <a href="" class="button expanded">Submit Request</a>
+    <div class="cell">
+      <div class="grid-container">
+        <div class="cell">
+          <div class="grid-y grid-margin-y">
+            <div class="cell">
+              <h2>Works with Popular Chat Apps</h2>
+            </div>
+            <div class="cell">
+              <img id="supported_apps_img" src="assets/supported-apps.png" alt="list of supported chat apps">
+            </div>
+            <div class="cell">
+              <h4>Don't see your app? Let us know you want it supported!</h4>
+            </div>
+            <div class="cell text-center">
+              <form name="chat-app" method="POST" id="supported-apps" netlify>
+                <input type="text" placeholder="I use..." name="app-name">
+                <button type="submit" class="button dark-button form-button">Request It!</button>
+            </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
   </div>
+  </div>
 
   <!-- SECTION: SIGN UP -->
   <div class="grid-y" id="sign-up">
-    <div class="grid-container">
-      <h2>100% FREE DURING BETA</h2>
-      <div class="grid-x grid-margin-x">
-        <div class="large-8 cell">
-          <label>
-            <input type="text" placeholder="your email address...">
-          </label>
-        </div>
-        <div class="large-4 cell">
-          <a href="" class="button expanded">Sign Up</a>
+    <div class="cell">
+      <div class="grid-container">
+        <div class="cell">
+          <div class="grid-y">
+            <div class="cell">
+              <h2>Sign Up for FREE Beta</h2>
+            </div>
+            <div class="cell">
+              <form name="email-address" method="POST" netlify>
+                <div class="grid-x">
+                  <div class="cell">
+                    <input type="email" placeholder="Your email address..." name="email">
+                  </div>
+                  <div class="cell">
+                    <button type="submit" class="button light-button form-button">Sign Up</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
