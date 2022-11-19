@@ -41,6 +41,15 @@ input[type="email"] {
 
 button.button, a.button {
     margin: 0;
+    padding: .85rem 2rem;
+}
+
+.button:hover, .button:focus {
+    background-color: var(--white);
+    color: var(--dark-purple);
+    border: 1px solid;
+    border-color: var(--dark-purple);
+
 }
 
 div.copy div.cell {
@@ -160,6 +169,36 @@ div#hero form button {
     margin-bottom: 2rem;
 }
 
+/* section: supported apps */
+div#supported-apps {
+    background-color: var(--white);
+    color: var(--dark-purple);
+    padding: 2rem 0;
+}
+
+div#supported-apps {
+    text-align: center;
+}
+
+div#supported-apps img#supported_apps_img {
+    max-height: 5rem;
+}
+
+div#supported-apps h4{
+    text-align: center;
+}
+
+/* form#supported-apps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form#supported-apps input {
+    max-width: 20rem;
+    margin: 0 1rem; */
+/* } */
+
 /* section: import */
 div#import {
     background-color: var(--cream);
@@ -204,37 +243,6 @@ div#movie-view div.image {
 div#movie-view img#movie-view {
     max-height: 400px;
 }
-
-/* section: supported apps */
-div#supported-apps {
-    background-color: var(--cream);
-    color: var(--dark-purple);
-    padding: 100px 0px 100px 0px;
-}
-
-div#supported-apps {
-    text-align: center;
-}
-
-div#supported-apps img#supported_apps_img {
-    max-height: 6rem;
-}
-
-div#supported-apps h4{
-    text-align: center;
-}
-
-form#supported-apps {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-form#supported-apps input {
-    max-width: 20rem;
-    margin: 0 1rem;
-}
-
 
 /* section: sign up */
 div#sign-up {
@@ -282,7 +290,7 @@ div#sign-up input{
     }
 
     div.copy h3 {
-        line-height: 1;
+        line-height: 1.25;
     }
     
     /* section: hero */

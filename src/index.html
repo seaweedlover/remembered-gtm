@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body>
+<body data-smooth-scroll>
   <!-- STICKY NAV MENU -->
   <div data-sticky-container>
     <div class="title-bar" id="menu" data-sticky data-options="marginTop:0;">
@@ -21,7 +21,7 @@
         REMEMBERED
       </div>
       <div class="title-bar-right">
-        <a href="#sign-up-anchor" class="button light-button" data-smooth-scroll><b>Sign Up</b></a>
+        <a href="#sign-up-anchor" class="button light-button"><b>Sign Up</b></a>
       </div>
     </div>
   </div>
@@ -34,7 +34,7 @@
           <div class="cell large-5 copy">
             <h1>Digital memories are&nbsp;forever</h1>
             <h3>View exported messages across major chat apps beautifully in one place.</h3>
-            <!-- <a class="anchor" id="sign-up-anchor"></a> -->
+            <a class="anchor" id="sign-up-anchor"></a>
             <h4>🎊 100% free during Beta 🎉</h4>
             <form name="email-address" method="POST" netlify>
               <input type="email" placeholder="Your email address..." name="email">
@@ -43,6 +43,31 @@
           </div>
           <div class="cell large-7 image">
             <img id="hero_img" src="assets/hero.png" alt="image of remembered app">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION: SUPPORTED APPS -->
+  <div class="grid-y" id="supported-apps">
+    <div class="cell">
+      <div class="grid-container">
+        <div class="cell">
+          <div class="grid-y grid-margin-y">
+            <div class="cell">
+              <h2>Works with Popular Chat Apps</h2>
+            </div>
+            <div class="cell">
+              <img id="supported_apps_img" src="assets/supported-apps.png" alt="list of supported chat apps">
+            </div>
+            <!-- <div class="cell">
+              <h4>Don't see your app? Let us know you want it supported!</h4>
+              <form name="chat-app" method="POST" id="supported-apps" netlify>
+                <input type="text" placeholder="I use..." name="app-name">
+                <button type="submit" class="button dark-button form-button">Request It!</button>
+            </div> -->
+            </form>
           </div>
         </div>
       </div>
@@ -130,36 +155,10 @@
     </div>
   </div>
 
-  <!-- SECTION: SUPPORTED APPS -->
-  <div class="grid-y" id="supported-apps">
-    <div class="cell">
-      <div class="grid-container">
-        <div class="cell">
-          <div class="grid-y grid-margin-y">
-            <div class="cell">
-              <h2>Works with Popular Chat Apps</h2>
-            </div>
-            <div class="cell">
-              <img id="supported_apps_img" src="assets/supported-apps.png" alt="list of supported chat apps">
-            </div>
-            <div class="cell">
-              <h4>Don't see your app? Let us know you want it supported!</h4>
-              <form name="chat-app" method="POST" id="supported-apps" netlify>
-                <input type="text" placeholder="I use..." name="app-name">
-                <button type="submit" class="button dark-button form-button">Request It!</button>
-            </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-
   <!-- SECTION: SIGN UP -->
   <div class="grid-y" id="sign-up">
     <div class="cell">
-      <a class="anchor" id="sign-up-anchor"></a>
+      <!-- <a class="anchor" id="sign-up-anchor"></a> -->
       <div class="grid-container">
         <div class="cell">
           <div class="grid-y">
