@@ -213,6 +213,21 @@ div#import img#import_img {
     max-height: 400px;
 }
 
+/* section: search */
+div#search {
+    background-color: var(--white);
+    color: var(--dark-purple);
+    padding: 100px 0px 100px 0px;
+}
+
+div#search div.image {
+    text-align: center;
+}
+
+div#search img#search_img {
+    max-height: 500px;
+}
+
 /* section: calendar */
 div#calendar {
     background-color: var(--rose);
