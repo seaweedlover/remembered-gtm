@@ -47,7 +47,7 @@
         REMEMBERED
       </div>
       <div class="title-bar-right">
-        <a href="#sign-up-anchor" class="button light-button" data-smooth-scroll><b>Sign Up</b></a>
+        <a href="#sign-up-anchor" class="button light-button" data-smooth-scroll><b>DOWNLOAD BETA</b></a>
       </div>
     </div>
   </div>
@@ -58,14 +58,19 @@
       <div class="grid-container">
         <div class="grid-x grid-margin-x">
           <div class="cell large-5 copy">
-            <h1>Digital memories are&nbsp;forever</h1>
-            <h3>Consolidate your messages across major&nbsp;chat&nbsp;apps in one place, in one beautiful&nbsp;view.</h3>
+            <h1>Digital&nbsp;memories keep loved ones with us forever</h1>
+            <h3>Preserve memories across major chat apps in one place, in one beautiful view.</h3>
             <a class="anchor" id="sign-up-anchor"></a>
             <h4>🎊 100% free during Beta 🎉</h4>
-            <form name="hero-signup" method="POST" enctype="application/x-www-form-urlencoded" netlify>
+            <div>
+              <a href="assets/apps/Remembered-1.0.0-x64.dmg" class="button light-button" download>Download for Mac(Intel Processor)</a>
+              <a href="assets/apps/Remembered-1.0.0-arm64.dmg" class="button light-button" download>Download for Mac(Apple Silicon)</a>
+              <a class="button light-button" download>Download for Windows</a>
+            </div id="download-links">
+            <!-- <form name="hero-signup" method="POST" enctype="application/x-www-form-urlencoded" netlify>
               <input type="email" placeholder="Your email address..." name="email">
-              <button type="submit" class="button expanded light-button form-button">Join the Waitlist</button>
-            </form>
+              <button type="submit" class="button expanded light-button form-button">Save Memories</button>
+            </form> -->
           </div>
           <div class="cell large-7 image">
             <img id="hero_img" src="assets/hero.png" alt="image of remembered app">
@@ -75,7 +80,8 @@
     </div>
   </div>
 
-  <!-- SECTION: SUPPORTED APPS -->
+<!-- We decided not to show supported apps section until we have more information there -->
+  <!-- SECTION: SUPPORTED APPS
   <div class="grid-y" id="supported-apps">
     <div class="cell">
       <div class="grid-container">
@@ -87,20 +93,18 @@
             <div class="cell">
               <img id="supported_apps_img" src="assets/supported-apps.png" alt="list of supported chat apps">
             </div>
-            <!-- 
             <div class="cell">
               <h4>Don't see your app? Let us know you want it supported!</h4>
               <form name="chat-app" method="POST" id="supported-apps" netlify>
                 <input type="text" placeholder="I use..." name="app-name">
                 <button type="submit" class="button dark-button form-button">Request It!</button>
-              </form>
-            </div> 
-            -->
+            </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- SECTION: IMPORT -->
   <div class="grid-y" id="import">
@@ -113,36 +117,13 @@
           <div class="cell large-5 copy">
             <div class="grid-y grid-margin-y">
               <div class="cell">
-                <h3>Import chats, photos, and other media from your chat apps.</h3>
+                <h3>Download history from your chat platforms and import into the app.</h3>
               </div>
               <div class="cell">
-                <h3>Save your data locally. Nothing is sent over the web or stored on a server.</h3>
+                <h3>You own 100% of your memory data locally, not WhatsApp or Instagram.</h3>
               </div>
               <div class="cell">
                 <a href="#sign-up-anchor" class="button dark-button" data-smooth-scroll>Import Memories</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- SECTION: SEARCH -->
-  <div class="grid-y" id="search">
-    <div class="cell">
-      <div class="grid-container">
-        <div class="grid-x grid-margin-x align-middle">
-          <div class="cell large-7 image">
-            <img id="search_img" src="assets/search-example.png" alt="import chat from various apps">
-          </div>
-          <div class="cell large-5 copy">
-            <div class="grid-y grid-margin-y">
-              <div class="cell">
-                <h3>Find messages and media across all your chat histories using intelligent search.</h3>
-              </div>
-              <div class="cell">
-                <a href="#sign-up-anchor" class="button dark-button" data-smooth-scroll>Search Memories</a>
               </div>
             </div>
           </div>
@@ -159,18 +140,44 @@
           <div class="cell small-12 image hide-for-large">
             <img id="calendar_img" src="assets/calendar-selector.png" alt="selecting chat by date in the app">
           </div>
+          <div class="cell large-7 image show-for-large">
+            <img id="calendar_img" src="assets/calendar-selector.png" alt="selecting chat by date in the app">
+          </div>
           <div class="cell large-5 copy">
             <div class="grid-y grid-margin-y">
               <div class="cell">
-                <h3>View messages chronologically & easily jump to a specific moment.</h3>
+                <h3>View messages, photos, and media chronologically.</h3>
               </div>
               <div class="cell">
-                <a href="#sign-up-anchor" class="button light-button" data-smooth-scroll>View Memories</a>
+                <h3>Easily jump to past memories by date.</h3>
+              </div>
+              <div class="cell">
+                <a href="#sign-up-anchor" class="button dark-button" data-smooth-scroll>View Memories</a>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION: SEARCH -->
+  <div class="grid-y" id="search">
+    <div class="cell">
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x align-middle">
           <div class="cell large-7 image show-for-large">
-            <img id="calendar_img" src="assets/calendar-selector.png" alt="selecting chat by date in the app">
+            <img id="search_img" src="assets/search.png" alt="search memories intelligently">
+          </div>
+          <div class="cell large-5 copy">
+            <div class="grid-y grid-margin-y">
+              <div class="cell">
+                <h3>Find memory pieces across all your chat histories using intelligent search.</h3>
+              </div>
+              <div class="cell">
+                <a href="#sign-up-anchor" class="button dark-button" data-smooth-scroll>Search Memories</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -188,7 +195,7 @@
           <div class="cell large-5 copy">
             <div class="grid-y grid-margin-y">
               <div class="cell">
-                <h3>Reminisce with <b>movie mode</b>.</h3>
+                <h3>Reminisce precious memories with movie mode.</h3>
               </div>
               <div class="cell">
                 <h3>Experience the joy of old conversations all over again.</h3>
@@ -210,7 +217,7 @@
         <div class="cell">
           <div class="grid-y">
             <div class="cell">
-              <h2>Join the Waitlist for FREE Beta</h2>
+              <h2>Join our mailing list for latest update</h2>
             </div>
             <div class="cell">
               <form name="footer-signup" method="POST" enctype="application/x-www-form-urlencoded" netlify>
@@ -219,7 +226,7 @@
                     <input type="email" placeholder="Your email address..." name="email">
                   </div>
                   <div class="cell">
-                    <button type="submit" class="button light-button form-button">Join the Waitlist</button>
+                    <button type="submit" class="button light-button form-button">SIGN UP</button>
                   </div>
                 </div>
               </form>

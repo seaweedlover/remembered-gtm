@@ -40,7 +40,7 @@ input[type="email"] {
 }
 
 button.button, a.button {
-    margin: 0;
+    margin: 0.5rem 0 0.5rem 0;
     padding: .85rem 2rem;
 }
 
@@ -76,7 +76,7 @@ a.clear.light-button {
 
 a.dark-button {
     background-color: var(--dark-purple);
-    color: var(--cream);
+    color: var(--white);
     border-radius: 30px;
 }
 
@@ -88,7 +88,7 @@ button.light-button {
 
 button.dark-button {
     background-color: var(--dark-purple);
-    color: var(--cream);
+    color: var(--white);
     border-radius: 30px;
 }
 
@@ -156,7 +156,7 @@ div#hero h3 {
 }
 
 div#hero img#hero_img {
-    max-height: 700px;
+    max-height: 650px;
 }
 
 div#hero h4 {
@@ -169,7 +169,7 @@ div#hero form button {
 }
 
 /* section: supported apps */
-div#supported-apps {
+/* div#supported-apps {
     background-color: var(--white);
     color: var(--dark-purple);
     padding: 2rem 0;
@@ -187,7 +187,7 @@ div#supported-apps h4{
     text-align: center;
 }
 
-/* form#supported-apps {
+form#supported-apps {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -195,8 +195,8 @@ div#supported-apps h4{
 
 form#supported-apps input {
     max-width: 20rem;
-    margin: 0 1rem; */
-/* } */
+    margin: 0 1rem;
+} */
 
 /* section: import */
 div#import {
@@ -230,17 +230,32 @@ div#search img#search_img {
 
 /* section: calendar */
 div#calendar {
+    background-color: var(--white);
+    color: var(--dark-purple);
+    padding: 100px 0px 100px 0px;
+}
+
+div#calendar div.image {
+    text-align: center;
+}
+
+div#calendar img#calendar_img {
+    max-height: 400px;
+}
+
+/* section: search */
+div#search {
     background-color: var(--rose);
     color: var(--off-white);
     padding: 100px 0px 100px 0px;
 }
 
-div#calendar img#calendar_img {
-    max-height: 550px;
+div#search div.image {
+    text-align: center;
 }
 
-div#calendar img#contact_img {
-    max-height: 400px;
+div#search img#search_img {
+    max-height: 350px;
 }
 
 /* section: movie view */
