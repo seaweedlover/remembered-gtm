@@ -47,7 +47,7 @@
         REMEMBERED
       </div>
       <div class="title-bar-right">
-        <a href="#sign-up-anchor" class="button light-button" data-smooth-scroll><b>JOIN WAITLIST</b></a>
+        <a href="#sign-up-anchor" class="button light-button" data-smooth-scroll><b>DOWNLOAD BETA</b></a>
       </div>
     </div>
   </div>
@@ -62,10 +62,15 @@
             <h3>Preserve memories across major chat apps in one place, in one beautiful view.</h3>
             <a class="anchor" id="sign-up-anchor"></a>
             <h4>🎊 100% free during Beta 🎉</h4>
-            <form name="hero-signup" method="POST" enctype="application/x-www-form-urlencoded" netlify>
+            <div>
+              <a href="assets/apps/Remembered-1.0.0-x64.dmg" class="button light-button" download>Download for Mac(Intel Processor)</a>
+              <a href="assets/apps/Remembered-1.0.0-arm64.dmg" class="button light-button" download>Download for Mac(Apple Silicon)</a>
+              <a class="button light-button" download>Download for Windows</a>
+            </div id="download-links">
+            <!-- <form name="hero-signup" method="POST" enctype="application/x-www-form-urlencoded" netlify>
               <input type="email" placeholder="Your email address..." name="email">
               <button type="submit" class="button expanded light-button form-button">Save Memories</button>
-            </form>
+            </form> -->
           </div>
           <div class="cell large-7 image">
             <img id="hero_img" src="assets/hero.png" alt="image of remembered app">
@@ -212,7 +217,7 @@
         <div class="cell">
           <div class="grid-y">
             <div class="cell">
-              <h2>Join the Waitlist for FREE Beta</h2>
+              <h2>Join our mailing list for latest update</h2>
             </div>
             <div class="cell">
               <form name="footer-signup" method="POST" enctype="application/x-www-form-urlencoded" netlify>
@@ -221,7 +226,7 @@
                     <input type="email" placeholder="Your email address..." name="email">
                   </div>
                   <div class="cell">
-                    <button type="submit" class="button light-button form-button">JOIN WAITLIST</button>
+                    <button type="submit" class="button light-button form-button">SIGN UP</button>
                   </div>
                 </div>
               </form>
