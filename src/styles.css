@@ -129,8 +129,19 @@ div#menu a.button {
     width: auto;
 }
 
+div#menu img#app_icon_img {
+    max-height: 50px;
+}
+
 div.title-bar-left {
     font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+div.app-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* section: hero */
