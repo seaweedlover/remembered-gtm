@@ -309,7 +309,7 @@ div#sign-up input{
 div#footer {
   background-color: var(--dark-purple);
   color: var(--cream);
-  padding: 100px 0px 100px 0px;
+  padding: 0px 0px 100px 0px;
   text-align: center;
 }
 
