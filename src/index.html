@@ -71,7 +71,7 @@
             <div>
               <a href="assets/apps/Remembered-0.1.0-x64.dmg" class="button light-button" download onclick="dataLayer.push({'event': 'download-app', 'platform': 'mac intel'})">Download for Mac (Intel Processor)</a>
               <a href=" https://www.dropbox.com/s/yethkkh22bi72rd/Remembered-0.1.0-arm64.dmg?dl=0" class="button light-button" download onclick="dataLayer.push({'event': 'download-app', 'platform': 'mac silicon'})" target="_blank">Download for Mac (Apple Silicon)</a>
-              <a class="button light-button" download onclick="dataLayer.push({'event': 'download-app', 'platform': 'windows'})" target="_blank">Download for Windows</a>
+              <a class="button light-button" download onclick="dataLayer.push({'event': 'download-app', 'platform': 'windows'})">Download for Windows</a>
             </div id="download-links">
             <!-- <form name="hero-signup" method="POST" enctype="application/x-www-form-urlencoded" netlify>
               <input type="email" placeholder="Your email address..." name="email">
@@ -243,8 +243,30 @@
     </div>
   </div>
 
+  <!-- SECTION: FOOTER -->
+  <div class="grid-y" id="footer">
+    <div class="cell">
+      <div class="grid-container">
+        <div class="cell">
+          <div class="grid-x">
+            <div class="cell" id="social-icons">
+              <a href="https://substack.com/profile/112590974-remembered-app" target="_blank"><img src="./assets/social_icons/substack-icon.webp" class="footer-social-icon" /></a>
+              <a href="https://www.instagram.com/remembered.app/" target="_blank"><img src="./assets/social_icons/Instagram_icon.png.webp" class="footer-social-icon" /></a>
+              <a href="https://www.youtube.com/channel/UC0g5MErSq40aSeNR167bWEw" target="_blank"><img src="./assets/social_icons/YouTube.svg.webp" class="footer-social-icon" /></a>
+            </div>
+          </div>
+          <div class="grid-y">
+            <div class="cell" id="footer-text">©️ 2023 Lux Ex Machina | <a href="mailto:luxexmachina.dev+support@gmail.com" class="link">Contact Us</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- JAVASCRIPT -->
-  <script src="foundation/js/vendor/jquery.js"></script>
+  <script src=" foundation/js/vendor/jquery.js"></script>
   <script src="foundation/js/vendor/what-input.js"></script>
   <script src="foundation/js/vendor/foundation.js"></script>
   <script src="foundation/js/app.js"></script>

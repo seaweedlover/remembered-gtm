@@ -56,6 +56,11 @@ div.copy div.cell {
 }
 
 /* anchor offset */
+a.link {
+  color: var(--cream);
+  text-decoration: underline;
+}
+
 a.anchor {
     display: block;
     position: relative;
@@ -298,6 +303,27 @@ div#sign-up h2{
 
 div#sign-up input{
     max-width: 400px;
+}
+
+/* section: footer */
+div#footer {
+  background-color: var(--dark-purple);
+  color: var(--cream);
+  padding: 100px 0px 100px 0px;
+  text-align: center;
+}
+
+div#social-icons {
+  padding: 1rem;
+}
+
+img.footer-social-icon {
+  height: 20px;
+  padding: 0 3px;
+}
+
+div#footer-text {
+  font-size: .9rem;
 }
 
 @media screen and (max-width: 40rem) {
