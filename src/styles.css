@@ -47,6 +47,7 @@ h4 {
 input, input[type="text"], input[type="email"] {
     height: 2.6rem;
     border-radius: .5rem;
+    border-color: var(--dark-purple)
 }
 input[type="email"] {
     display: inline-block;
