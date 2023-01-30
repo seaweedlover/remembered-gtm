@@ -216,6 +216,11 @@ div#supported-apps h4{
     text-align: center;
 }
 
+
+img.supported-apps-icons {
+  max-height: 75px;
+}
+
 form#supported-apps {
     display: flex;
     align-items: center;
