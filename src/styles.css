@@ -23,9 +23,22 @@ h2 {
     font-size: 2rem;
 }
 
+h2.heading-text {
+  font-weight: bold;
+}
+
 h3 {
     font-size: 1.55rem;
 }
+
+h3.subheading-text {
+  text-decoration: underline;
+}
+
+h3 ul {
+  text-align: left;
+}
+
 
 h4 {
     font-size: 1.35rem;
@@ -185,10 +198,10 @@ div#hero form button {
 }
 
 /* section: supported apps */
-/* div#supported-apps {
+div#supported-apps {
     background-color: var(--white);
     color: var(--dark-purple);
-    padding: 2rem 0;
+    padding: 3rem 0;
 }
 
 div#supported-apps {
@@ -212,7 +225,7 @@ form#supported-apps {
 form#supported-apps input {
     max-width: 20rem;
     margin: 0 1rem;
-} */
+}
 
 /* section: import */
 div#import {
@@ -229,19 +242,12 @@ div#import img#import_img {
     max-height: 400px;
 }
 
-/* section: search */
-div#search {
-    background-color: var(--white);
-    color: var(--dark-purple);
-    padding: 100px 0px 100px 0px;
-}
+/* section: privacy */
+div#privacy {
+  background-color: var(--rose);
+  color: var(--white);
+  padding: 100px 0px 100px 0px;
 
-div#search div.image {
-    text-align: center;
-}
-
-div#search img#search_img {
-    max-height: 500px;
 }
 
 /* section: calendar */
@@ -266,12 +272,17 @@ div#search {
     padding: 100px 0px 100px 0px;
 }
 
+div#search h2.heading-text {
+  margin-top: 25px;
+}
+
 div#search div.image {
     text-align: center;
 }
 
 div#search img#search_img {
-    max-height: 350px;
+    max-height: 500px;
+    border-radius: 50px;
 }
 
 /* section: movie view */
@@ -291,8 +302,8 @@ div#movie-view img#movie-view {
 
 /* section: sign up */
 div#sign-up {
-    background-color: var(--dark-purple);
-    color: var(--cream);
+    background-color: var(--cream);
+    color: var(--dark-purple);
     padding: 100px 0px 100px 0px;
     text-align: center;
 }
@@ -356,7 +367,7 @@ div#footer-text {
     }
 
     div.copy h3 {
-        line-height: 1.25;
+        line-height:1.5;
     }
     
     /* section: hero */
