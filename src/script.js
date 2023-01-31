@@ -65,11 +65,9 @@ function downloadApp() {
 }
 
 function scrollTo(elementId) {
-  const element = document.getElementById(elementId);
-
-  element.scrollIntoView({
+  document.getElementById(elementId).scrollIntoView({
     behavior: 'smooth',
-    block: 'end',
+    block: 'start',
     inline: 'nearest',
   });
 }
