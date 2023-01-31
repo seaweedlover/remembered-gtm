@@ -203,6 +203,7 @@ div#hero {
 
 div#hero div.image {
     text-align: center;
+    margin: auto;
 }
 
 div#hero h1 {
@@ -230,6 +231,13 @@ div#hero form button {
     margin-bottom: 2rem;
 }
 
+div#hero a.button {
+  font-size: 1rem;
+}
+
+div#hero div.grid-container {
+  max-width: 85rem;
+}
 /* section: supported apps */
 div#supported-apps {
     background-color: var(--cream);
@@ -376,7 +384,12 @@ div#footer-text {
 }
 
 @media screen and (max-width: 40rem) {
-    form#supported-apps input {
+  /* sticky nav */
+  div.title-bar-right a.button {
+    font-size: .8rem;
+}  
+  
+  form#supported-apps input {
         max-width: 100%;
         margin-bottom: 1rem;
     }
