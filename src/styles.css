@@ -387,6 +387,7 @@ div#footer-text {
   /* sticky nav */
   div.title-bar-right a.button {
     font-size: .8rem;
+    padding: .85rem 1rem;
 }  
   
   form#supported-apps input {
