@@ -64,8 +64,14 @@ function downloadApp() {
   console.log('detectedOS:', detectedOS);
 }
 
-function scrollTo(hash) {
-  location.hash = '#' + hash;
+function scrollTo(elementId) {
+  const element = document.getElementById(elementId);
+
+  element.scrollIntoView({
+    behavior: 'smooth',
+    block: 'end',
+    inline: 'nearest',
+  });
 }
 
 function toggleDropdown() {
