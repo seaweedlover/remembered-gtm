@@ -232,7 +232,7 @@ div#hero form button {
 
 /* section: supported apps */
 div#supported-apps {
-    background-color: var(--white);
+    background-color: var(--cream);
     color: var(--dark-purple);
     padding: 3rem 0;
 }
@@ -267,7 +267,7 @@ form#supported-apps input {
 
 /* section: import */
 div#import {
-    background-color: var(--cream);
+    background-color: var(--white);
     color: var(--dark-purple);
     padding: 100px 0px 100px 0px;
 }
@@ -282,8 +282,8 @@ div#import img#import_img {
 
 /* section: privacy */
 div#privacy {
-  background-color: var(--rose);
-  color: var(--white);
+  background-color: var(--cream);
+  color: var(--dark-purple);
   padding: 100px 0px 100px 0px;
 
 }
@@ -305,8 +305,8 @@ div#calendar img#calendar_img {
 
 /* section: search */
 div#search {
-    background-color: var(--rose);
-    color: var(--off-white);
+    background-color: var(--cream);
+    color: var(--dark-purple);
     padding: 100px 0px 100px 0px;
 }
 
