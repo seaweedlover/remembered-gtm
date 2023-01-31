@@ -136,6 +136,38 @@ div.title-bar-right a.button {
     border-radius: 20px;
 }
 
+div#dropdown-wrapper {
+  max-height: 44px;
+  max-width: 300px;
+  float: right;
+}
+
+div.dropdown-items {
+  background-color: white;
+  color: var(--dark-purple);
+  text-align: left;
+  border: 1px var(--dark-purple) solid;
+  border-radius: 20px;
+  padding: 10px;
+  color: var(--dark-purple);
+}
+
+div.dropdown-items a {
+  color: var(--dark-purple)
+}
+
+div.dropdown-items:hover {
+  background-color: var(--cream);
+}
+
+div#dropdown-menu {
+  display: none;
+}
+
+.show {
+  display: block !important;
+}
+
 div#menu {
     width:100%;
     background-color: var(--black-purple);

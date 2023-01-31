@@ -53,7 +53,7 @@ function downloadApp() {
   ) {
     scrollTo('sign-up-anchor');
   } else if (detectedOS === 'MacOS') {
-    // pop-up
+    toggleDropdown();
   } else if (detectedOS === 'Windows') {
     downloadURI(
       'assets/apps/Remembered-0.1.0-x64.dmg',
@@ -67,3 +67,17 @@ function downloadApp() {
 function scrollTo(hash) {
   location.hash = '#' + hash;
 }
+
+function toggleDropdown() {
+  document.getElementById('dropdown-menu').classList.toggle('show');
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function (e) {
+  if (!e.target.matches('dropdown-button')) {
+    var myDropdown = document.getElementById('dropdown-menu');
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+};
