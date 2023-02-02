@@ -201,9 +201,12 @@ div#hero {
     padding: 2rem 0px 2rem 0px;
 }
 
+div#hero .copy {
+  margin: auto;
+}
+
 div#hero div.image {
     text-align: center;
-    margin: auto;
 }
 
 div#hero h1 {
@@ -237,6 +240,18 @@ div#hero a.button {
 
 div#hero div.grid-container {
   max-width: 85rem;
+}
+
+/* section: download */
+div#sign-up-anchor {
+  background-color: var(--white);
+  color: var(--dark-purple);
+  padding: 100px 0px 100px 0px;
+  text-align: center;
+}
+
+div#sign-up-anchor div.download-button {
+  margin: 5px 0px;
 }
 /* section: supported apps */
 div#supported-apps {
