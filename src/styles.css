@@ -47,6 +47,7 @@ h4 {
 input, input[type="text"], input[type="email"] {
     height: 2.6rem;
     border-radius: .5rem;
+    border-color: var(--dark-purple)
 }
 input[type="email"] {
     display: inline-block;
@@ -135,6 +136,38 @@ div.title-bar-right a.button {
     border-radius: 20px;
 }
 
+div#dropdown-wrapper {
+  max-height: 44px;
+  max-width: 300px;
+  float: right;
+}
+
+div.dropdown-items {
+  background-color: white;
+  color: var(--dark-purple);
+  text-align: left;
+  border: 1px var(--dark-purple) solid;
+  border-radius: 20px;
+  padding: 10px;
+  color: var(--dark-purple);
+}
+
+div.dropdown-items a {
+  color: var(--dark-purple)
+}
+
+div.dropdown-items:hover {
+  background-color: var(--cream);
+}
+
+div#dropdown-menu {
+  display: none;
+}
+
+.show {
+  display: block !important;
+}
+
 div#menu {
     width:100%;
     background-color: var(--black-purple);
@@ -199,7 +232,7 @@ div#hero form button {
 
 /* section: supported apps */
 div#supported-apps {
-    background-color: var(--white);
+    background-color: var(--cream);
     color: var(--dark-purple);
     padding: 3rem 0;
 }
@@ -216,6 +249,11 @@ div#supported-apps h4{
     text-align: center;
 }
 
+
+img.supported-apps-icons {
+  max-height: 75px;
+}
+
 form#supported-apps {
     display: flex;
     align-items: center;
@@ -229,7 +267,7 @@ form#supported-apps input {
 
 /* section: import */
 div#import {
-    background-color: var(--cream);
+    background-color: var(--white);
     color: var(--dark-purple);
     padding: 100px 0px 100px 0px;
 }
@@ -244,8 +282,8 @@ div#import img#import_img {
 
 /* section: privacy */
 div#privacy {
-  background-color: var(--rose);
-  color: var(--white);
+  background-color: var(--cream);
+  color: var(--dark-purple);
   padding: 100px 0px 100px 0px;
 
 }
@@ -267,8 +305,8 @@ div#calendar img#calendar_img {
 
 /* section: search */
 div#search {
-    background-color: var(--rose);
-    color: var(--off-white);
+    background-color: var(--cream);
+    color: var(--dark-purple);
     padding: 100px 0px 100px 0px;
 }
 
