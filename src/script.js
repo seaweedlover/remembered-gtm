@@ -55,10 +55,7 @@ function downloadApp() {
   } else if (detectedOS === 'MacOS') {
     toggleDropdown();
   } else if (detectedOS === 'Windows') {
-    downloadURI(
-      'assets/apps/Remembered-0.1.0-x64.dmg',
-      'Remembered-0.1.0-x64.dmg'
-    );
+    downloadURI("assets/app_releases/Remembered-0.1.1 Setup.exe", "Remembered-0.1.1 Setup.exe")
   }
 
   console.log('detectedOS:', detectedOS);
