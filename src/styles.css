@@ -137,9 +137,7 @@ div.title-bar-right a.button {
 }
 
 div#dropdown-wrapper {
-  max-height: 44px;
-  max-width: 300px;
-  float: right;
+  padding: 0 0 1rem 0;
 }
 
 div.dropdown-items {
@@ -198,7 +196,7 @@ div.app-icon-box {
 /* section: hero */
 div#hero {
     background-color: #42244A;
-    padding: 2rem 0px 2rem 0px;
+    padding: 3rem 0px 3rem 0px;
 }
 
 div#hero .copy {
@@ -246,7 +244,7 @@ div#hero div.grid-container {
 div#sign-up-anchor {
   background-color: var(--white);
   color: var(--dark-purple);
-  padding: 200px 0px;
+  padding: 5rem 0;
   text-align: center;
 }
 
