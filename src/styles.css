@@ -137,9 +137,7 @@ div.title-bar-right a.button {
 }
 
 div#dropdown-wrapper {
-  max-height: 44px;
-  max-width: 300px;
-  float: right;
+  padding: 0 0 1rem 0;
 }
 
 div.dropdown-items {
@@ -198,7 +196,11 @@ div.app-icon-box {
 /* section: hero */
 div#hero {
     background-color: #42244A;
-    padding: 2rem 0px 2rem 0px;
+    padding: 3rem 0px 3rem 0px;
+}
+
+div#hero .copy {
+  margin: auto;
 }
 
 div#hero div.image {
@@ -230,6 +232,25 @@ div#hero form button {
     margin-bottom: 2rem;
 }
 
+div#hero a.button {
+  font-size: 1rem;
+}
+
+div#hero div.grid-container {
+  max-width: 85rem;
+}
+
+/* section: download */
+div#sign-up-anchor {
+  background-color: var(--white);
+  color: var(--dark-purple);
+  padding: 5rem 0;
+  text-align: center;
+}
+
+div#sign-up-anchor div.download-button {
+  margin: 5px 0px;
+}
 /* section: supported apps */
 div#supported-apps {
     background-color: var(--cream);
@@ -376,7 +397,13 @@ div#footer-text {
 }
 
 @media screen and (max-width: 40rem) {
-    form#supported-apps input {
+  /* sticky nav */
+  div.title-bar-right a.button {
+    font-size: .8rem;
+    padding: .85rem 1rem;
+}  
+  
+  form#supported-apps input {
         max-width: 100%;
         margin-bottom: 1rem;
     }

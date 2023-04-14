@@ -53,17 +53,6 @@
         </div>
       </div>
       <div class="title-bar-right">
-        <div id="dropdown-wrapper">
-          <a id="dropdown-button" class="button light-button" onClick="downloadApp()" data-smooth-scroll><b>DOWNLOAD</b></a>
-          <div id="dropdown-menu">
-            <div class="dropdown-items">
-              <a href="assets/apps/Remembered-0.1.0-x64.dmg">MacOS Intel</a>
-            </div>
-            <div class="dropdown-items">
-              <a href="assets/apps/Remembered-0.1.0-arm64.dmg">MacOS Silicon</a>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -73,29 +62,64 @@
     <div class="cell">
       <div class="grid-container">
         <div class="grid-x grid-margin-x">
-          <div class="cell large-5 copy">
+          <div class="cell large-4 copy">
             <h1>Digital memories keep loved ones with us forever</h1>
             <h3>Preserve memories across major chat apps in one place, in one beautiful view.</h3>
-            <h4 id="sign-up-anchor" style="font-weight: bold">🎊 100% free during Alpha & Beta 🎉</h4>
-            <div style="margin-bottom: 25px">
-              <a href="assets/apps/Remembered-0.1.0-x64.dmg" class="button light-button" download onclick="dataLayer.push({'event': 'download-app', 'platform': 'mac intel'})">Download for Mac (Intel Processor)</a>
-              <a href="assets/apps/Remembered-0.1.0-arm64.dmg" class="button light-button" download onclick="dataLayer.push({'event': 'download-app', 'platform': 'mac silicon'})" target="_blank">Download for Mac (Apple Silicon)</a>
-              <a class="button light-button" download onclick="dataLayer.push({'event': 'download-app', 'platform': 'windows'})">Download for Windows</a>
-            </div id="download-links">
-            <!-- <form name="hero-signup" method="POST" enctype="application/x-www-form-urlencoded" netlify>
-              <input type="email" placeholder="Your email address..." name="email">
-              <button type="submit" class="button expanded light-button form-button">Save Memories</button>
-            </form> -->
+            <div id="dropdown-wrapper">
+              <a id="dropdown-button" class="button light-button" onClick="downloadApp()" data-smooth-scroll><b>DOWNLOAD REMEMBERED</b></a>
+              <div id="dropdown-menu">
+                <div class="dropdown-items">
+                  <a href="assets/app_releases/Remembered-0.1.4-alpha-x64.dmg">MacOS Intel</a>
+                </div>
+                <div class="dropdown-items">
+                  <a href="assets/app_releases/Remembered-0.1.4-alpha-arm64.dmg">MacOS Silicon</a>
+                </div>
+                <div class="dropdown-items">
+                  <a href="assets/app_releases/Remembered-0.1.1 Setup.exe">Windows</a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="cell large-7 image align-middle">
-            <img id="hero_img" src="assets/hero.png" alt="image of remembered app">
+          <div class="cell large-8 image align-middle">
+            <img id="hero_img" src="assets/hero-desktop.png" alt="image of remembered app">
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- We decided not to show supported apps section until we have more information there -->
+  <!-- SECTION: DOWNLOAD -->
+  <div class="grid-y" id="sign-up-anchor">
+    <div class="cell">
+      <div class="grid-container">
+        <div class="cell">
+          <div class="grid-y grid-margin-y">
+            <div class="cell" style="margin-bottom: 30px;">
+              <h2 class="heading-text">🎊 🙀 100% free during Alpha & Beta 🙀 🎉</h2>
+              <span>Version 0.1.4 Alpha (Updated Feb 27, 2023)</span>
+            </div>
+            <div class="cell download-button">
+              <!-- INTEL -->
+              <a href="assets/app_releases/Remembered-0.1.4-alpha-x64.dmg" class="button light-button" download onclick="dataLayer.push({'event': 'download-app', 'platform': 'mac intel'})">Download for Mac (Intel Processor)</a>
+            </div>
+            <!-- ARM -->
+            <div class="cell download-button">
+              <a href="assets/app_releases/Remembered-0.1.4-alpha-arm64.dmg" class="button light-button" download onclick="dataLayer.push({'event': 'download-app', 'platform': 'mac silicon'})" target="_blank">Download for Mac (Apple Silicon)</a>
+            </div>
+            <!-- WINDOWS -->
+            <div class="cell download-button">
+              <a href="assets/app_releases/Remembered-0.1.1 Setup.exe" class="button light-button" download onclick="dataLayer.push({'event': 'download-app', 'platform': 'windows'})">Download for Windows</a>
+              <!-- <form name="hero-signup" method="POST" enctype="application/x-www-form-urlencoded" netlify>
+                <input type="email" placeholder="Your email address..." name="email">
+                <button type="submit" class="button expanded light-button form-button">Save Memories</button>
+              </form> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- SECTION: SUPPORTED APPS -->
   <div class="grid-y" id="supported-apps">
     <div class="cell">
@@ -107,18 +131,24 @@
             </div>
             <div class="cell">
               <h3 style="margin-bottom: 15px;">Alpha Release (Current)</h3>
-              <img class="supported-apps-icons" id="supported_apps_img_alpha" src="assets/supported-apps-alpha.png" alt="list of supported chat apps in Alpha release">
+              <a href="https://coda.io/d/Remembered-Chat_dMiQtdCTzgw/How-to-download-your-personal-data-from-Instagram" target="_blank">
+                <img class="supported-apps-icons" id="supported_apps_img_alpha" src="./assets/platform_logos/instagram_logo.png" alt="Instagram" style="margin: 0px 20px" />
+              </a>
+              <a href="https://coda.io/d/Remembered-Chat_dMiQtdCTzgw/How-to-download-your-personal-chat-data-from-Messenger" target="_blank">
+                <img class="supported-apps-icons" id="supported_apps_img_alpha" src="./assets/platform_logos/messenger_logo.png" alt="Facebook Messenger" style="margin: 0px 20px" />
+              </a>
             </div>
             <div class="cell">
               <h3 style="margin-bottom: 15px;">Beta Release (Future)</h3>
-              <img class="supported-apps-icons" id="supported_apps_img_beta" src="assets/supported-apps-beta.png" alt="list of supported chat apps in Beta release">
+              <img class="supported-apps-icons" id="supported_apps_img_beta" src="assets/supported-apps-beta.png" alt="list of supported chat apps in Beta release" />
             </div>
-            <div class="cell" style="margin-top: 50px;">
-              <h4 style="font-weight: bold">Want your favorite chat app supported next?</h4>
+            <div class="cell">
+              <a href="https://coda.io/d/Remembered-Chat_dMiQtdCTzgw/How-to-download-your-personal-data-from-Instagram" target="_blank" style="font-weight: bold; font-size: 1.2rem">Need help downloading your chat data?</a>
+              <!-- <h4 style="font-weight: bold">Want your favorite chat app supported next?</h4>
               <form name="chat-app" method="POST" id="supported-apps" netlify>
                 <input type="text" placeholder="I use..." name="app-name">
                 <button type="submit" class="button dark-button form-button">Request It!</button>
-              </form>
+              </form> -->
             </div>
           </div>
         </div>
@@ -142,8 +172,31 @@
               <div class="cell">
                 <h3>Export your messages from various chat platforms, then import them into Remembered app for viewing and safekeeping.</h3>
               </div>
+              <div class="cell" style="text-align: center;">
+                <h3 style="font-weight: bold">Get Data Export Instructions for:</h3>
+              </div>
               <div class="cell">
-                <a href="#sign-up-anchor" class="button dark-button" data-smooth-scroll>Import Memories</a>
+                <div class="grid-x">
+                  <div class="cell small-2"></div>
+                  <div class="cell small-4">
+                    <a href="https://coda.io/d/Remembered-Chat_dMiQtdCTzgw/How-to-download-your-personal-data-from-Instagram" target="_blank">
+                      <img src="./assets/platform_logos/instagram_logo.png" style="max-height: 80px" alt="Instagram" />
+                    </a>
+                  </div>
+                  <div class="cell small-4">
+                    <a href="https://coda.io/d/Remembered-Chat_dMiQtdCTzgw/How-to-download-your-personal-chat-data-from-Messenger" target="_blank">
+                      <img src="./assets/platform_logos/messenger_logo.png" style="max-height: 80px" alt="Facebook Messenger" />
+                    </a>
+                  </div>
+                  <div class="cell small-2"></div>
+                </div>
+              </div>
+              <div class="cell">
+                <h3>Then,
+                  <a href="#sign-up-anchor" style="text-decoration: underline;" data-smooth-scroll>
+                    download the app
+                  </a> to import your data.
+                </h3>
               </div>
             </div>
           </div>
@@ -157,10 +210,10 @@
     <div class="cell">
       <div class="grid-container">
         <div class="grid-x grid-margin-x align-middle">
-          <div class="cell large-6 image">
+          <div class="cell large-7 image">
             <img src="./assets/privacy.png" alt="your data is completely private">
           </div>
-          <div class="cell large-6 copy">
+          <div class="cell large-5 copy">
             <div class="grid-y grid-margin-y">
               <div class="cell">
                 <h2 class="heading-text">Complete Data Privacy 🔒</h3>
@@ -224,10 +277,10 @@
       <div class="grid-container">
         <div class="grid-x grid-margin-x align-middle">
           <div class="cell small-12 image hide-for-large">
-            <img id="search_img" src="assets/search.png" alt="search memories intelligently">
+            <img id="search_img" src="assets/search-example.png" alt="search memories intelligently">
           </div>
           <div class="cell large-6 image show-for-large">
-            <img id="search_img" src="assets/search.png" alt="search memories intelligently">
+            <img id="search_img" src="assets/search-example.png" alt="search memories intelligently">
           </div>
           <div class="cell large-6 copy">
             <div class="grid-y grid-margin-y">
@@ -316,7 +369,7 @@
             </div>
           </div>
           <div class="grid-y">
-            <div class="cell" id="footer-text">©️ 2023 Lux Ex Machina | <a href="mailto:luxexmachina.dev+support@gmail.com" class="link">Contact Us</a>
+            <div class="cell" id="footer-text">© 2023 Lux Ex Machina | <a href="mailto:luxexmachina.dev+support@gmail.com" class="link">Contact Us</a>
             </div>
 
           </div>
