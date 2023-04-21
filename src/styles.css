@@ -131,10 +131,10 @@ button.form-button {
 }
 
 /* sticky nav menu */
-div.title-bar-right a.button {
+/* div.title-bar-right a.button {
     font-size: .9rem;
     border-radius: 20px;
-}
+} */
 
 div#dropdown-wrapper {
   padding: 0 0 1rem 0;
@@ -168,7 +168,7 @@ div#dropdown-menu {
 
 div#menu {
     width:100%;
-    background-color: var(--black-purple);
+    background-color: var(--dark-purple);
     color: var(--cream);
     padding: 20px;
 }
@@ -272,7 +272,7 @@ div#supported-apps h4{
 
 
 img.supported-apps-icons {
-  max-height: 75px;
+  max-height: 50px;
 }
 
 form#supported-apps {
