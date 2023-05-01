@@ -43,85 +43,32 @@
 
   <!-- STICKY NAV MENU -->
   <!-- <div data-sticky-container> -->
-    <div class="title-bar" id="menu" data-options="marginTop:0;">
-      <div class="app-icon-box">
-        <div>
-          <img id="app_icon_img" src="assets/app-icon-1x.png" alt="Remembered app icon">
-        </div>
-        <div class="title-bar-left">
-          REMEMBERED
-        </div>
+  <div class="title-bar" id="menu" data-options="marginTop:0;">
+    <div class="app-icon-box">
+      <div>
+        <img id="app_icon_img" src="assets/app-icon-1x.png" alt="Remembered app icon">
       </div>
-      <!-- <div class="title-bar-right">
-      </div> -->
-    </div>
-  <!-- </div> -->
-
-  <!-- SECTION: HERO -->
-  <div class="grid-y" id="hero">
-    <div class="cell">
-      <div class="grid-container">
-        <div class="grid-x grid-margin-x">
-          <div class="cell large-4 copy">
-            <h1>Digital memories keep loved ones with us forever</h1>
-            <h3>Preserve memories across major chat apps in one place, in one beautiful view.</h3>
-            <div id="dropdown-wrapper">
-              <a id="dropdown-button" class="button light-button" onClick="downloadApp()" data-smooth-scroll><b>DOWNLOAD REMEMBERED</b></a>
-              <div id="dropdown-menu">
-                <div class="dropdown-items">
-                  <a href="assets/app_releases/Remembered-0.1.4-alpha-x64.dmg">MacOS Intel</a>
-                </div>
-                <div class="dropdown-items">
-                  <a href="assets/app_releases/Remembered-0.1.4-alpha-arm64.dmg">MacOS Silicon</a>
-                </div>
-                <div class="dropdown-items">
-                  <a href="assets/app_releases/Remembered-0.1.1 Setup.exe">Windows</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="cell large-8 image align-middle">
-            <img id="hero_img" src="assets/hero-desktop.png" alt="image of remembered app">
-          </div>
-        </div>
+      <div class="title-bar-left">
+        REMEMBERED
       </div>
     </div>
   </div>
 
-  <!-- SECTION: DOWNLOAD -->
-  <!-- <div class="grid-y" id="sign-up-anchor">
+  <!-- SECTION: HERO -->
+  <div class="grid-y section" id="hero">
     <div class="cell">
       <div class="grid-container">
-        <div class="cell">
-          <div class="grid-y grid-margin-y">
-            <div class="cell" style="margin-bottom: 30px;">
-              <h2 class="heading-text">🎊 🙀 100% free during Alpha & Beta 🙀 🎉</h2>
-              <span>Version 0.1.4 Alpha (Updated Feb 27, 2023)</span>
-            </div>
-            <div class="cell download-button">
-              INTEL -->
-              <!-- <a href="assets/app_releases/Remembered-0.1.4-alpha-x64.dmg" class="button light-button" download onclick="dataLayer.push({'event': 'download-app', 'platform': 'mac intel'})">Download for Mac (Intel Processor)</a>
-            </div> -->
-            <!-- ARM -->
-            <!-- <div class="cell download-button">
-              <a href="assets/app_releases/Remembered-0.1.4-alpha-arm64.dmg" class="button light-button" download onclick="dataLayer.push({'event': 'download-app', 'platform': 'mac silicon'})" target="_blank">Download for Mac (Apple Silicon)</a>
-            </div> -->
-            <!-- WINDOWS -->
-            <!-- <div class="cell download-button">
-              <a href="assets/app_releases/Remembered-0.1.1 Setup.exe" class="button light-button" download onclick="dataLayer.push({'event': 'download-app', 'platform': 'windows'})">Download for Windows</a> -->
-              <!-- <form name="hero-signup" method="POST" enctype="application/x-www-form-urlencoded" netlify>
-                <input type="email" placeholder="Your email address..." name="email">
-                <button type="submit" class="button expanded light-button form-button">Save Memories</button>
-              </form> -->
-            <!-- </div>
-          </div>
-        </div>
+        <h2>Memories from your apps <br><strong>all together</strong></h2>
+        <a id="hero-cta" class="button light-button" onClick="downloadApp()" data-smooth-scroll>Get Remembered</a>
+        <img id="hero_image" src="assets/import-screen.png" alt="import chat from various apps">
       </div>
     </div>
-  </div> -->
+  </div>
+
+  <hr>
 
   <!-- SECTION: SUPPORTED APPS -->
-  <div class="grid-y" id="supported-apps">
+  <div class="grid-y section" id="supported-apps">
     <div class="cell">
       <div class="grid-container">
         <div class="cell">
@@ -130,147 +77,99 @@
               <h2 class="heading-text">Works with your Favorite Apps</h2>
             </div>
             <div class="cell" style="margin-bottom: 30px;">
-              <!-- <h3 style="margin-bottom: 15px;">Alpha Release (Current)</h3> -->
               <a href="https://coda.io/d/Remembered-Chat_dMiQtdCTzgw/How-to-download-your-personal-data-from-Instagram" target="_blank">
-                <img class="supported-apps-icons" id="supported_apps_img_alpha" src="./assets/platform_logos/instagram_logo.png" alt="Instagram" style="margin: 0px 20px" />
+                <img class="supported-apps-icons" src="./assets/platform_logos/instagram_logo.png" alt="Instagram" style="margin: 0px 20px" />
               </a>
               <a href="https://coda.io/d/Remembered-Chat_dMiQtdCTzgw/How-to-download-your-personal-chat-data-from-Messenger" target="_blank">
-                <img class="supported-apps-icons" id="supported_apps_img_alpha" src="./assets/platform_logos/messenger_logo.png" alt="Facebook Messenger" style="margin: 0px 20px" />
+                <img class="supported-apps-icons" src="./assets/platform_logos/fb-messenger_logo.png" alt="Facebook Messenger" style="margin: 0px 20px" />
               </a>
               <a href="https://coda.io/d/Remembered-Chat_dMiQtdCTzgw/How-to-export-your-chat-data-from-WhatsApp_su4F7" target="_blank">
-                <img class="supported-apps-icons" id="supported_apps_img_alpha" src="./assets/platform_logos/whatsapp_logo.png" alt="WhatsApp" style="margin: 0px 20px" />
+                <img class="supported-apps-icons" src="./assets/platform_logos/whatsapp_logo.png" alt="WhatsApp" style="margin: 0px 20px" />
               </a>
             </div>
             <div class="cell">
-              <h4 style="margin-bottom: 15px;">Coming soon</h4>
-              <img class="supported-apps-icons" id="supported_apps_img_beta" src="./assets/platform_logos/google-photos.png" alt="Google Photos" style="margin: 0px 20px" />
-              <img class="supported-apps-icons" id="supported_apps_img_beta" src="./assets/platform_logos/mail.png" alt="Email" style="margin: 0px 20px" />
-              <img class="supported-apps-icons" id="supported_apps_img_beta" src="./assets/platform_logos/imessage_logo.png" alt="iMessage" style="margin: 0px 20px" />
-              <img class="supported-apps-icons" id="supported_apps_img_beta" src="./assets/platform_logos/signal_logo.png" alt="Signal" style="margin: 0px 20px" />
-              <img class="supported-apps-icons" id="supported_apps_img_beta" src="./assets/platform_logos/telegram_logo.png" alt="Telegram" style="margin: 0px 20px" />
-              <img class="supported-apps-icons" id="supported_apps_img_beta" src="./assets/platform_logos/wechat_logo.png" alt="Wechat" style="margin: 0px 20px" />
-            </div>
-            <!-- <div class="cell">
-              <a href="https://coda.io/d/Remembered-Chat_dMiQtdCTzgw/How-to-download-your-personal-data-from-Instagram" target="_blank" style="font-weight: bold; font-size: 1.2rem">Need help downloading your chat data?</a>
-              <h4 style="font-weight: bold">Want your favorite chat app supported next?</h4>
-              <form name="chat-app" method="POST" id="supported-apps" netlify>
-                <input type="text" placeholder="I use..." name="app-name">
-                <button type="submit" class="button dark-button form-button">Request It!</button>
-              </form>
-            </div> -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- SECTION: IMPORT -->
-  <div class="grid-y" id="import">
-    <div class="cell">
-      <div class="grid-container">
-        <div class="grid-x grid-margin-x align-middle">
-          <div class="cell large-7 image">
-            <img id="import_img" src="assets/import-screen.png" alt="import chat from various apps">
-          </div>
-          <div class="cell large-5 copy">
-            <div class="grid-y grid-margin-y">
-              <div class="cell">
-                <h2 class="heading-text">Export, then Import 💬</h3>
-              </div>
-              <div class="cell">
-                <h3>Export your messages from various chat platforms, then import them into Remembered app for viewing and safekeeping.</h3>
-              </div>
-              <div class="cell" style="text-align: center;">
-                <h3 style="font-weight: bold">Get Data Export Instructions for:</h3>
-              </div>
-              <div class="cell">
-                <div class="grid-x">
-                  <div class="cell small-2"></div>
-                  <div class="cell small-4">
-                    <a href="https://coda.io/d/Remembered-Chat_dMiQtdCTzgw/How-to-download-your-personal-data-from-Instagram" target="_blank">
-                      <img src="./assets/platform_logos/instagram_logo.png" style="max-height: 80px" alt="Instagram" />
-                    </a>
-                  </div>
-                  <div class="cell small-4">
-                    <a href="https://coda.io/d/Remembered-Chat_dMiQtdCTzgw/How-to-download-your-personal-chat-data-from-Messenger" target="_blank">
-                      <img src="./assets/platform_logos/messenger_logo.png" style="max-height: 80px" alt="Facebook Messenger" />
-                    </a>
-                  </div>
-                  <div class="cell small-2"></div>
+              <div class="grid-y grid-margin-y">
+                <div class="cell">
+                  <h4>Coming soon</h4>
+                </div>
+                <div class="cell">
+                  <img class="coming-soon-apps-icons" src="./assets/platform_logos/google-photos_logo.png" alt="Google Photos" style="margin: 0px 20px" />
+                  <img class="coming-soon-apps-icons" src="./assets/platform_logos/gmail_logo.png" alt="Email" style="margin: 0px 20px" />
+                  <img class="coming-soon-apps-icons" src="./assets/platform_logos/imessage_logo.png" alt="iMessage" style="margin: 0px 20px" />
+                </div>
+                <div class="cell">
+                  <img class="coming-soon-apps-icons" src="./assets/platform_logos/signal_logo.png" alt="Signal" style="margin: 0px 20px" />
+                  <img class="coming-soon-apps-icons" src="./assets/platform_logos/telegram_logo.png" alt="Telegram" style="margin: 0px 20px" />
+                  <img class="coming-soon-apps-icons" src="./assets/platform_logos/wechat_logo.png" alt="Wechat" style="margin: 0px 20px" />
+                </div>
+                <div class="cell" style="margin-top: 3rem;">
+                  <a href="#sign-up-anchor" class="button dark-button" data-smooth-scroll>Consolidate Your Chats</a>
                 </div>
               </div>
-              <div class="cell">
-                <h3>Then,
-                  <a href="#sign-up-anchor" style="text-decoration: underline;" data-smooth-scroll>
-                    download the app
-                  </a> to import your data.
-                </h3>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  <hr>
 
   <!-- SECTION: PRIVACY -->
-  <div class="grid-y" id="privacy">
+  <div class="grid-y section" id="privacy">
     <div class="cell">
       <div class="grid-container">
-        <div class="grid-x grid-margin-x align-middle">
-          <div class="cell large-7 image">
-            <img src="./assets/privacy.png" alt="your data is completely private">
-          </div>
-          <div class="cell large-5 copy">
-            <div class="grid-y grid-margin-y">
-              <div class="cell">
-                <h2 class="heading-text">Complete Data Privacy 🔒</h3>
-              </div>
-              <div class="cell">
-                <h3 style="text-align: left; text-decoration: underline">You own your data, not Big Tech:</h3>
-                <h3>
-                  <ul>
-                    <li>All data is stored on your computer.</li>
-                    <li>Nothing is sent over the internet.</li>
-                    <li>Nothing is stored on a server.</li>
-                    <li>No one sees your messages but you.</li>
-                  </ul>
-                </h3>
-              </div>
-              <div class="cell">
-                <a href="#sign-up-anchor" class="button dark-button" data-smooth-scroll>Secure Your Memories</a>
-              </div>
+        <div class="cell">
+          <div class="grid-y grid-margin-y">
+            <div class="cell">
+              <h2 class="heading-text">Complete Data Privacy 🔒</h3>
+            </div>
+            <div class="cell">
+              <h3>Own Your Data 100% locally</h3>
+            </div>
+            <div class="cell">
+              <h3>No Tracking of Your Private Data</h3>
+            </div>
+            <div class="cell">
+              <h3>No Ads, Now or Ever</h3>
+            </div>
+            <div class="cell">
+              <a href="#sign-up-anchor" class="button dark-button" data-smooth-scroll>Store Your Memories</a>
             </div>
           </div>
+
         </div>
+
       </div>
     </div>
   </div>
 
+  <hr>
+
   <!-- SECTION: CALENDAR -->
-  <div class="grid-y" id="calendar">
+  <div class="grid-y section" id="calendar">
     <div class="cell">
       <div class="grid-container">
-        <div class="grid-x grid-margin-x align-middle">
-          <div class="cell small-12 image hide-for-large">
-            <img id="calendar_img" src="assets/calendar-selector.png" alt="selecting chat by date in the app">
-          </div>
-          <div class="cell large-7 image show-for-large">
-            <img id="calendar_img" src="assets/calendar-selector.png" alt="selecting chat by date in the app">
-          </div>
-          <div class="cell large-5 copy">
+        <div class="grid-y grid-margin-y align-middle">
+          <div class="cell">
             <div class="grid-y grid-margin-y">
               <div class="cell">
                 <h2 class="heading-text">Go Back in Time ⏳</h3>
               </div>
-              <div class="cell">
-                <h3>View messages, photos, and media chronologically.</h3>
+              <div class="cell image">
+                <img id="calendar_img" src="assets/search-calendar.png" alt="selecting chat by date in the app">
               </div>
               <div class="cell">
-                <h3>Easily jump to past memories by date.</h3>
+                <h3>View messages & media chronologically.</h3>
               </div>
               <div class="cell">
-                <a href="#sign-up-anchor" class="button dark-button" data-smooth-scroll>View Memories</a>
+                <h3>Search messages across all chat platforms.</h3>
+              </div>
+              <div class="cell">
+                <h3>Jump to any message in the past by date.</h3>
+              </div>
+              <div class="cell">
+                <a href="#sign-up-anchor" class="button dark-button" data-smooth-scroll>Find Your Memories</a>
               </div>
             </div>
           </div>
@@ -279,57 +178,104 @@
     </div>
   </div>
 
-  <!-- SECTION: SEARCH -->
-  <div class="grid-y" id="search">
-    <div class="cell">
-      <div class="grid-container">
-        <div class="grid-x grid-margin-x align-middle">
-          <div class="cell small-12 image hide-for-large">
-            <img id="search_img" src="assets/search-example.png" alt="search memories intelligently">
-          </div>
-          <div class="cell large-6 image show-for-large">
-            <img id="search_img" src="assets/search-example.png" alt="search memories intelligently">
-          </div>
-          <div class="cell large-6 copy">
-            <div class="grid-y grid-margin-y">
-              <div class="cell">
-                <h2 class="heading-text">Find that Message 🔍</h2>
-              </div>
-              <div class="cell">
-                <h3>Use intelligent search to find messages across all your chats, from any chat platform.</h3>
-              </div>
-              <div class="cell">
-                <a href="#sign-up-anchor" class="button dark-button" data-smooth-scroll>Search Memories</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <hr>
 
   <!-- SECTION: MOVIE VIEW -->
-  <div class="grid-y" id="movie-view">
+  <div class="grid-y section" id="movie-view">
     <div class="cell">
       <div class="grid-container">
-        <div class="grid-x grid-margin-x align-middle">
-          <div class="cell large-7 image">
+        <div class="grid-y grid-margin-y">
+          <div class="cell">
+            <h2 class="heading-text">Create Your Memory Collection</h3>
+          </div>
+          <div class="cell image">
             <img id="memory_img" src="assets/memory-movies.png" alt="image of memory movies in the app">
           </div>
-          <div class="cell large-5 copy">
-            <div class="grid-y grid-margin-y">
-              <div class="cell">
-                <h2 class="heading-text">Remember the Laughs 😹</h3>
-              </div>
-              <div class="cell">
-                <h3>Reminisce precious memories with movie mode.</h3>
-              </div>
-              <div class="cell">
-                <h3>Experience the joy of old conversations all over again.</h3>
-              </div>
-              <div class="cell">
-                <a href="#sign-up-anchor" class="button dark-button" data-smooth-scroll>Relive Memories</a>
-              </div>
+          <div class="cell">
+            <h3>Bookmark your favorite conversations.</h3>
+          </div>
+          <div class="cell">
+            <h3>Curate collections of your favorite memories.</h3>
+          </div>
+          <div class="cell">
+            <a href="#sign-up-anchor" class="button dark-button" data-smooth-scroll>Create Your Collection</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- SECTION: FAQ -->
+  <div class="grid-y section" id="faq">
+    <div class="cell">
+      <div class="grid-container">
+        <div class="grid-y grid-margin-y">
+          <div class="cell">
+            <h2 class="heading-text">Frequently Asked Questions</h2>
+          </div>
+          <div class="cell">
+            <ul class="accordion" data-accordion data-allow-all-closed="true">
+              <li class="accordion-item" data-accordion-item>
+                <a href="#" class="accordion-title">Question 1</a>
+                <div class="accordion-content" data-tab-content>
+                  <p>Panel 1. Lorem ipsum dolor</p>
+                  <a href="#">Nowhere to Go</a>
+                </div>
+              </li>
+              <li class="accordion-item" data-accordion-item>
+                <a href="#" class="accordion-title">Question 2</a>
+                <div class="accordion-content" data-tab-content>
+                  <p>Panel 1. Lorem ipsum dolor</p>
+                  <a href="#">Nowhere to Go</a>
+                </div>
+              </li>
+              <li class="accordion-item" data-accordion-item>
+                <a href="#" class="accordion-title">Question 3</a>
+                <div class="accordion-content" data-tab-content>
+                  <p>Panel 1. Lorem ipsum dolor</p>
+                  <a href="#">Nowhere to Go</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="cell">
+            <a href="#sign-up-anchor" class="button dark-button" data-smooth-scroll>Get More Help</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- SECTION: FAQ -->
+  <div class="grid-y section" id="movie-view">
+    <div class="cell">
+      <div class="grid-container">
+        <div class="grid-y grid-margin-y">
+          <div class="cell">
+            <h2 class="heading-text">Remembered on the Web</h3>
+          </div>
+          <div class="cell">
+            <h3>Bookmark your favorite conversations.</h3>
+          </div>
+          <div class="cell">
+            <h3>Curate collections of your favorite memories.</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION: FOOTER -->
+  <div class="grid-y section" id="footer">
+    <div class="cell">
+      <div class="grid-container">
+        <div class="grid-y">
+          <div class="cell">
+            <div class="cell">© 2023 Lux Ex Machina | <a href="mailto:luxexmachina.dev+support@gmail.com">About Us</a>
             </div>
           </div>
         </div>
@@ -338,50 +284,19 @@
   </div>
 
   <!-- SECTION: SIGN UP -->
-  <div class="grid-y" id="sign-up">
+  <div class="grid-x" id="sign-up">
     <div class="cell">
       <div class="grid-container">
-        <div class="cell">
-          <div class="grid-y">
-            <div class="cell">
-              <h2>Join our mailing list for the latest updates</h2>
+        <form name="footer-signup" method="POST" enctype="application/x-www-form-urlencoded" netlify>
+          <div class="grid-x align-middle grid-margin-x">
+            <div class="cell auto">
+              <input type="email" placeholder="Your email address..." name="email">
             </div>
-            <div class="cell">
-              <form name="footer-signup" method="POST" enctype="application/x-www-form-urlencoded" netlify>
-                <div class="grid-x">
-                  <div class="cell">
-                    <input type="email" placeholder="Your email address..." name="email">
-                  </div>
-                  <div class="cell">
-                    <button type="submit" class="button dark-button form-button">SIGN UP</button>
-                  </div>
-                </div>
-              </form>
+            <div class="cell shrink">
+              <button id="email-form" type="submit" class="button form-button">Join the Mailing List</button>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- SECTION: FOOTER -->
-  <div class="grid-y" id="footer">
-    <div class="cell">
-      <div class="grid-container">
-        <div class="cell">
-          <div class="grid-x">
-            <div class="cell" id="social-icons">
-              <a href="https://substack.com/profile/112590974-remembered-app" target="_blank"><img src="./assets/social_icons/substack-icon.webp" class="footer-social-icon" /></a>
-              <a href="https://www.instagram.com/remembered.app/" target="_blank"><img src="./assets/social_icons/Instagram_icon.png.webp" class="footer-social-icon" /></a>
-              <a href="https://www.youtube.com/channel/UC0g5MErSq40aSeNR167bWEw" target="_blank"><img src="./assets/social_icons/YouTube.svg.webp" class="footer-social-icon" /></a>
-            </div>
-          </div>
-          <div class="grid-y">
-            <div class="cell" id="footer-text">© 2023 Lux Ex Machina | <a href="mailto:luxexmachina.dev+support@gmail.com" class="link">Contact Us</a>
-            </div>
-
-          </div>
-        </div>
+        </form>
       </div>
     </div>
   </div>

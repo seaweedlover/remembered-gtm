@@ -1,18 +1,14 @@
 /* brand colors */
 :root {
-    --black-purple: rgb(54, 22, 61);
-    --dark-purple: #42244A;
-    --cream: #F5E8C7;
-    --sand: #ECCCB2;
-    --rose: #AC7088;
-    --peach: #DEB6AB;
-    --off-white: rgba(255,255,255,0.8);
-    --white: #FFFFFF;
+    --primary-light: #f4f4fa;
+    --primary-dark: #371d61;
+    --primary: #754ba3;
 }
 
 /* global styles */
 body {
-    background-color: var(--black-purple);
+    background-color: var(--primary-light);
+    color: var(--primary-dark)
 }
 
 h1 {
@@ -23,171 +19,87 @@ h2 {
     font-size: 2rem;
 }
 
-h2.heading-text {
-  font-weight: bold;
-}
-
 h3 {
-    font-size: 1.55rem;
+  font-size: 1.55rem;
 }
-
-h3.subheading-text {
-  
-}
-
-h3 ul {
-  text-align: left;
-}
-
 
 h4 {
     font-size: 1.35rem;
 }
 
+.heading-text {
+  font-weight: bold;
+  color: var(--primary-dark)
+}
+
+hr {
+  border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(66, 36, 74, 0), rgba(66, 36, 74, 0.25), rgba(66, 36, 74, 0));
+    max-width: 65%;
+}
+
+/* all sections */
+div.section {
+  margin: 6rem 0rem;
+  text-align: center;
+}
+
+div.section img {
+  max-width: 70%;
+}
+
+div.section div.grid-margin-y div.cell {
+  margin: 1rem 0rem;
+}
+
+/* input styles */
 input, input[type="text"], input[type="email"] {
     height: 2.6rem;
     border-radius: .5rem;
-    border-color: var(--dark-purple)
+    border-color: var(--primary-dark)
 }
+
 input[type="email"] {
     display: inline-block;
 }
 
-button.button, a.button {
-    margin: 0.5rem 0 0.5rem 0;
-    padding: .85rem 2rem;
+/* button styles */
+.button {
+  font-size: 1.25rem;
+  text-align: center;
+  font-weight: 500;
+  padding: 1rem 5rem;
+  background-color: var(--primary);
+  color: var(--primary-light);
+  margin: 0.5rem 0 0.5rem 0;
 }
 
 .button:hover, .button:focus {
-    background-color: var(--white);
-    color: var(--dark-purple);
-    border: 1px solid;
-    border-color: var(--dark-purple);
+  background-color: var(--white);
+  color: var(--primary-dark);
+  border: 1px solid;
+  border-color: var(--primary-dark);
 }
 
-div.copy div.cell {
-    padding: 0 2rem;
-}
-
-/* anchor offset */
-a.link {
-  color: var(--cream);
-  text-decoration: underline;
-}
-
-a.anchor {
-    display: block;
-    position: relative;
-    top: -100px;
-    visibility: hidden;
-}
-
-/* button styles */
-a.light-button {
-    background-color: var(--cream);
-    color: var(--dark-purple);
-    border-radius: 30px;
-}
-
-a.clear.light-button {
-    color: var(--cream);
-}
-
-a.dark-button {
-    background-color: var(--dark-purple);
-    color: var(--white);
-    border-radius: 30px;
-}
-
-button.light-button {
-    background-color: var(--cream);
-    color: var(--dark-purple);
-    border-radius: 30px; 
-}
-
-button.dark-button {
-    background-color: var(--dark-purple);
-    color: var(--white);
-    border-radius: 30px;
-}
-
-a.button {
-    font-size: 1.25rem;
-    text-align: center;
-    font-weight: bold;
-    width: 100%;
-    max-width: 30rem;
-}
-
-button.button {
-    font-size: 1.15rem;
-    text-align: center;
-    font-weight: bold;
-}
-
-button.form-button {
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
-}
-
-/* sticky nav menu */
-/* div.title-bar-right a.button {
-    font-size: .9rem;
-    border-radius: 20px;
-} */
-
-div#dropdown-wrapper {
-  padding: 0 0 1rem 0;
-}
-
-div.dropdown-items {
-  background-color: white;
-  color: var(--dark-purple);
-  text-align: left;
-  border: 1px var(--dark-purple) solid;
-  border-radius: 20px;
-  padding: 10px;
-  color: var(--dark-purple);
-}
-
-div.dropdown-items a {
-  color: var(--dark-purple)
-}
-
-div.dropdown-items:hover {
-  background-color: var(--cream);
-}
-
-div#dropdown-menu {
-  display: none;
-}
-
-.show {
-  display: block !important;
-}
-
+/* menu title bar */
 div#menu {
-    width:100%;
-    background-color: var(--dark-purple);
-    color: var(--cream);
-    padding: 20px;
-}
-
-div#menu a.button {
-    margin: 0;
-    width: auto;
+  width:100%;
+  color: var(--primary-dark);
+  padding: 1rem;
+  background-color: inherit;
 }
 
 div#menu img#app_icon_img {
     max-height: 50px;
 }
 
-div.title-bar-left {
+div#menu div.title-bar-left {
     font-size: 1.5rem;
     margin-left: 0.5rem;
 }
 
-div.app-icon-box {
+div#menu div.app-icon-box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -195,32 +107,31 @@ div.app-icon-box {
 
 /* section: hero */
 div#hero {
-    background-color: #42244A;
-    padding: 3rem 0px 3rem 0px;
+  margin-top: 3rem;
+}
+
+div#hero img#hero_image {
+  max-width: 100%;
+}
+
+div#hero a#hero-cta {
+  font-size: 1.4rem;
+  margin: 1rem 0rem;
 }
 
 div#hero .copy {
   margin: auto;
 }
 
-div#hero div.image {
-    text-align: center;
-}
-
-div#hero h1 {
-    color: var(--cream);
-    padding-bottom: 2rem;
-    line-height: 1.25;
-}
-
-div#hero h3 {
-    color: var(--off-white);
+div#hero h2 {
+    color: var(--primary-dark);
     line-height: 1.68;
-    padding-bottom: 3rem;
+    margin: 0rem 0rem 2rem 0rem;
 }
 
-div#hero img#hero_img {
+div#hero img#hero-img {
     max-height: 650px;
+    margin: 2rem 0rem;
 }
 
 div#hero h4 {
@@ -232,53 +143,30 @@ div#hero form button {
     margin-bottom: 2rem;
 }
 
-div#hero a.button {
-  font-size: 1rem;
-}
-
 div#hero div.grid-container {
-  max-width: 85rem;
-}
-
-/* section: download */
-div#sign-up-anchor {
-  background-color: var(--white);
-  color: var(--dark-purple);
-  padding: 5rem 0;
+  max-width: 50rem;
   text-align: center;
 }
 
-div#sign-up-anchor div.download-button {
-  margin: 5px 0px;
-}
 /* section: supported apps */
 div#supported-apps {
-    background-color: var(--cream);
-    color: var(--dark-purple);
-    padding: 3rem 0;
-}
-
-div#supported-apps {
+    color: var(--primary-dark);
     text-align: center;
 }
 
-div#supported-apps img#supported_apps_img {
-    max-height: 5rem;
+div#supported-apps img.supported-apps-icons {
+  max-height: 75px;
 }
 
-div#supported-apps h4{
-    text-align: center;
-}
-
-
-img.supported-apps-icons {
+div#supported-apps img.coming-soon-apps-icons {
   max-height: 50px;
+  max-width: 50px;
 }
 
 form#supported-apps {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 form#supported-apps input {
@@ -288,13 +176,7 @@ form#supported-apps input {
 
 /* section: import */
 div#import {
-    background-color: var(--white);
-    color: var(--dark-purple);
-    padding: 100px 0px 100px 0px;
-}
-
-div#import div.image {
-    text-align: center;
+  color: var(--primary-dark);
 }
 
 div#import img#import_img {
@@ -303,21 +185,13 @@ div#import img#import_img {
 
 /* section: privacy */
 div#privacy {
-  background-color: var(--cream);
-  color: var(--dark-purple);
-  padding: 100px 0px 100px 0px;
-
+  color: var(--primary-dark);
+  text-align: center;
 }
 
 /* section: calendar */
 div#calendar {
-    background-color: var(--white);
-    color: var(--dark-purple);
-    padding: 100px 0px 100px 0px;
-}
-
-div#calendar div.image {
-    text-align: center;
+    color: var(--primary-dark);
 }
 
 div#calendar img#calendar_img {
@@ -326,17 +200,11 @@ div#calendar img#calendar_img {
 
 /* section: search */
 div#search {
-    background-color: var(--cream);
-    color: var(--dark-purple);
-    padding: 100px 0px 100px 0px;
+    color: var(--primary-dark);
 }
 
 div#search h2.heading-text {
   margin-top: 25px;
-}
-
-div#search div.image {
-    text-align: center;
 }
 
 div#search img#search_img {
@@ -346,25 +214,74 @@ div#search img#search_img {
 
 /* section: movie view */
 div#movie-view {
-    background-color: var(--white);
-    color: var(--dark-purple);
-    padding: 100px 0px 100px 0px;
-}
-
-div#movie-view div.image {
-    text-align: center;
+    color: var(--primary-dark);
 }
 
 div#movie-view img#movie-view {
     max-height: 400px;
 }
 
+/* section: faq */
+
+div#faq .accordion {
+  text-align: left;
+}
+
+div#faq .accordion {
+  max-width: 70%;
+  margin: auto;
+  background-color: inherit;
+
+}
+
+div#faq li.accordion-item a {
+  border: none;
+  font-size: inherit;
+  color: var(--primary-dark);
+  font-weight: bold;
+}
+
+div#faq li.accordion-item a.accordion-title {
+  font-size: 1.5rem;
+}
+
+div#faq .accordion-content {
+  background-color: inherit;
+  color: inherit;
+  border: none;
+}
+
+div#faq a.accordion-title:focus, div#faq a.accordion-title:hover {
+  background-color: var(--primary);
+}
+
+/* section: footer */
+div#footer {
+  background-color: var(--primary-dark);
+  color: var(--primary-light);
+  text-align: center;
+  padding: 2rem 0rem 5rem 0rem;
+  font-size: 1rem;
+  margin-bottom: 0rem;
+}
+
+div#footer a {
+  color: inherit;
+  font-weight: bold;
+}
+
 /* section: sign up */
 div#sign-up {
-    background-color: var(--cream);
-    color: var(--dark-purple);
-    padding: 100px 0px 100px 0px;
-    text-align: center;
+  background-color: var(--primary-dark);
+  color: var(--primary-light);
+  position: fixed;
+  inset: auto 0 0 0;
+  text-align: center;
+}
+
+div#sign-up div.grid-container {
+  max-width: 80%;
+  margin: auto;
 }
 
 div#sign-up h2{
@@ -372,28 +289,17 @@ div#sign-up h2{
 }
 
 div#sign-up input{
-    max-width: 400px;
+  color: var(--primary-dark);
+  border: none;
+  margin: 0;
 }
 
-/* section: footer */
-div#footer {
-  background-color: var(--dark-purple);
-  color: var(--cream);
-  padding: 100px 0px 100px 0px;
-  text-align: center;
+div#sign-up input::placeholder {
+  color: var(--primary)
 }
 
-div#social-icons {
-  padding: 1rem;
-}
-
-img.footer-social-icon {
-  height: 20px;
-  padding: 0 3px;
-}
-
-div#footer-text {
-  font-size: .9rem;
+div#sign-up button#email-form {
+  padding: 1rem 2rem;
 }
 
 @media screen and (max-width: 40rem) {
@@ -435,36 +341,9 @@ div#footer-text {
         line-height:1.5;
     }
     
-    /* section: hero */
-    div#hero div.copy {
-        padding: 0 3rem 0 3rem;
-    }
-
-    div#hero div.copy h1 {
-        padding-bottom: 1rem;
-    }
-
-    div#hero div.copy h3 {
-        padding-bottom: 2rem;
-    }
-
     /* all sections */
     div.grid-y {
         text-align: center;
-    }
-    
-    /* section: import */
-    div#import div.image {
-        margin-bottom: 3rem;
-    }
-
-    /* section: calendar */
-    div#calendar div.image.hide-for-large {
-        margin-bottom: 3rem;
-    }
-
-    div#movie-view div.image {
-        margin-bottom: 3rem;
     }
 
     /* section: supported apps */
