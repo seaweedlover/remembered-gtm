@@ -359,20 +359,33 @@ div#movie-view img#movie-view {
     max-height: 400px;
 }
 
-/* section: sign up */
-div#sign-up {
+/* section: social media */
+div#social-media {
     background-color: var(--cream);
     color: var(--dark-purple);
     padding: 100px 0px 100px 0px;
     text-align: center;
 }
 
-div#sign-up h2{
-    padding-bottom: 30px;
+div#community-intro h2{
+    padding-bottom: 1rem;
 }
 
-div#sign-up input{
-    max-width: 400px;
+div#community-intro {
+    padding-bottom: 1rem;
+}
+
+div#community-link {
+    text-align: center;
+}
+
+div#community-link img {
+    margin-bottom: 1rem;
+}
+
+img.social-media-icon {
+    width: 120px;
+    height: 120px;
 }
 
 /* section: footer */
