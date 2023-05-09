@@ -29,7 +29,8 @@ h4 {
 
 .heading-text {
   font-weight: bold;
-  color: var(--primary-dark)
+  color: var(--primary-dark);
+  margin-bottom: 1rem;
 }
 
 hr {
@@ -111,12 +112,12 @@ div#hero {
 }
 
 div#hero img#hero_image {
-  max-width: 100%;
+  max-width: 90%;
 }
 
 div#hero a#hero-cta {
   font-size: 1.4rem;
-  margin: 1rem 0rem;
+  margin: 5rem 0rem;
 }
 
 div#hero .copy {
@@ -144,14 +145,26 @@ div#hero form button {
 }
 
 div#hero div.grid-container {
-  max-width: 50rem;
+  max-width: 70%;
   text-align: center;
+}
+/* section: side-by-side - both supported apps & privacy */
+div#side-by-side a.dark-button {
+  margin-top: 1rem;
+}
+
+div#side-by-side hr {
+  margin-bottom: 6rem;
 }
 
 /* section: supported apps */
 div#supported-apps {
     color: var(--primary-dark);
     text-align: center;
+}
+
+div#supported-apps > div.grid-y {
+  margin-bottom: 3rem;
 }
 
 div#supported-apps img.supported-apps-icons {
@@ -174,19 +187,18 @@ form#supported-apps input {
     margin: 0 1rem;
 }
 
-/* section: import */
-div#import {
-  color: var(--primary-dark);
-}
-
-div#import img#import_img {
-    max-height: 400px;
-}
-
 /* section: privacy */
 div#privacy {
   color: var(--primary-dark);
   text-align: center;
+}
+
+div#privacy > div.grid-y > div.cell:first-child {
+  margin: inherit;
+}
+
+div#privacy > div.grid-y > div.cell {
+  margin: 1rem auto;
 }
 
 /* section: calendar */
@@ -195,16 +207,12 @@ div#calendar {
 }
 
 div#calendar img#calendar_img {
-    max-height: 400px;
+    max-height: 900px;
 }
 
 /* section: search */
 div#search {
     color: var(--primary-dark);
-}
-
-div#search h2.heading-text {
-  margin-top: 25px;
 }
 
 div#search img#search_img {
@@ -222,14 +230,21 @@ div#movie-view img#movie-view {
 }
 
 /* section: faq */
+div#faq .grid-container {
+  max-width: 80%;
+}
+
 div#faq .accordion {
   text-align: left;
 }
 
 div#faq .accordion {
-  max-width: 70%;
   margin: auto;
   background-color: inherit;
+}
+
+div#faq .accordion-title {
+  padding-right: 3rem;
 }
 
 div#faq li.accordion-item a {
@@ -251,14 +266,15 @@ div#faq .accordion-content {
 
 div#faq a.accordion-title:focus, div#faq a.accordion-title:hover {
   background-color: var(--primary);
+  color: var(--primary-light)
 }
 
 /* section: footer */
 div#footer {
-  background-color: var(--primary-dark);
-  color: var(--primary-light);
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
   text-align: center;
-  padding: 2rem 0rem 5rem 0rem;
+  padding: 2rem 0rem 7rem 0rem;
   font-size: 1rem;
   margin-bottom: 0rem;
 }
@@ -304,11 +320,11 @@ div#community-intro {
     padding-bottom: 1rem;
 }
 
-div#community-link {
+div.community-link {
     text-align: center;
 }
 
-div#community-link img {
+div.community-link img {
     margin-bottom: 1rem;
 }
 
@@ -325,19 +341,7 @@ div#sign-up button#email-form {
   padding: 1rem 2rem;
 }
 
-@media screen and (max-width: 40rem) {
-  /* sticky nav */
-  div.title-bar-right a.button {
-    font-size: .8rem;
-    padding: .85rem 1rem;
-}  
-  
-  form#supported-apps input {
-        max-width: 100%;
-        margin-bottom: 1rem;
-    }
-}
-
+/* Medium Screen */
 @media screen and (max-width: 64rem) {
     /* global styles */
     h1 {
@@ -353,7 +357,7 @@ div#sign-up button#email-form {
     }
 
     .grid-container {
-        max-width: 45rem;
+        max-width: 90%;
     }
     
     .button {
@@ -368,12 +372,32 @@ div#sign-up button#email-form {
     div.grid-y {
         text-align: center;
     }
-
+    
     /* section: supported apps */
     form#supported-apps {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        justify-content: center;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: center;
     }
+
+    /* section: faq */
+    div#faq .grid-container {
+      max-width: 90%;
+    }
+
+}
+
+/* Small Screen */
+@media screen and (max-width: 40rem) {
+  /* sticky nav */
+  div.title-bar-right a.button {
+    font-size: .8rem;
+    padding: .85rem 1rem;
+  }  
+  
+  form#supported-apps input {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
 }

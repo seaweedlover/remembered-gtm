@@ -58,88 +58,99 @@
   <div class="grid-y section" id="hero">
     <div class="cell">
       <div class="grid-container">
-        <h2>Memories from your apps <br><strong>all together</strong></h2>
+        <h1>Memories from your apps <br><strong>all together</strong></h1>
         <a id="hero-cta" class="button light-button" onClick="downloadApp()" data-smooth-scroll>Get Remembered</a>
-        <img id="hero_image" src="assets/import-screen.png" alt="import chat from various apps">
       </div>
+    </div>
+    <div>
+      <img id="hero_image" src="assets/hero.png" alt="import chat from various apps">
     </div>
   </div>
 
   <hr>
 
-  <!-- SECTION: SUPPORTED APPS -->
-  <div class="grid-y section" id="supported-apps">
-    <div class="cell">
-      <div class="grid-container">
-        <div class="cell">
-          <div class="grid-y grid-margin-y">
-            <div class="cell">
-              <h2 class="heading-text">Works with your Favorite Apps</h2>
-            </div>
-            <div class="cell" style="margin-bottom: 30px;">
-              <a href="https://coda.io/d/Remembered-Chat_dMiQtdCTzgw/How-to-download-your-personal-data-from-Instagram" target="_blank">
-                <img class="supported-apps-icons" src="./assets/platform_logos/instagram_logo.png" alt="Instagram" style="margin: 0px 20px" />
-              </a>
-              <a href="https://coda.io/d/Remembered-Chat_dMiQtdCTzgw/How-to-download-your-personal-chat-data-from-Messenger" target="_blank">
-                <img class="supported-apps-icons" src="./assets/platform_logos/fb-messenger_logo.png" alt="Facebook Messenger" style="margin: 0px 20px" />
-              </a>
-              <a href="https://coda.io/d/Remembered-Chat_dMiQtdCTzgw/How-to-export-your-chat-data-from-WhatsApp_su4F7" target="_blank">
-                <img class="supported-apps-icons" src="./assets/platform_logos/whatsapp_logo.png" alt="WhatsApp" style="margin: 0px 20px" />
-              </a>
-            </div>
-            <div class="cell">
-              <div class="grid-y grid-margin-y">
-                <div class="cell">
-                  <h4>Coming soon</h4>
-                </div>
-                <div class="cell">
-                  <img class="coming-soon-apps-icons" src="./assets/platform_logos/google-photos_logo.png" alt="Google Photos" style="margin: 0px 20px" />
-                  <img class="coming-soon-apps-icons" src="./assets/platform_logos/gmail_logo.png" alt="Email" style="margin: 0px 20px" />
-                  <img class="coming-soon-apps-icons" src="./assets/platform_logos/imessage_logo.png" alt="iMessage" style="margin: 0px 20px" />
-                </div>
-                <div class="cell">
-                  <img class="coming-soon-apps-icons" src="./assets/platform_logos/signal_logo.png" alt="Signal" style="margin: 0px 20px" />
-                  <img class="coming-soon-apps-icons" src="./assets/platform_logos/telegram_logo.png" alt="Telegram" style="margin: 0px 20px" />
-                  <img class="coming-soon-apps-icons" src="./assets/platform_logos/wechat_logo.png" alt="Wechat" style="margin: 0px 20px" />
-                </div>
-                <div class="cell" style="margin-top: 3rem;">
-                  <a href="#sign-up-anchor" class="button dark-button" data-smooth-scroll>Consolidate Your Chats</a>
-                </div>
+  <!-- SECTION: Side By Side -->
+  <div id="side-by-side" class="grid-container">
+    <div class="grid-x section">
+      <!-- SECTION: SUPPORTED APPS -->
+      <div class="cell large-6" id="supported-apps">
+        <div class="grid-y grid-margin-y">
+          <div class="cell">
+            <h2 class="heading-text">Works with your Favorite Apps</h2>
+          </div>
+          <div class="cell" style="margin-bottom: 30px;">
+            <a href="https://coda.io/d/Remembered-Chat_dMiQtdCTzgw/How-to-download-your-personal-data-from-Instagram" target="_blank">
+              <img class="supported-apps-icons" src="./assets/platform_logos/instagram_logo.png" alt="Instagram" style="margin: 0px 20px" />
+            </a>
+            <a href="https://coda.io/d/Remembered-Chat_dMiQtdCTzgw/How-to-download-your-personal-chat-data-from-Messenger" target="_blank">
+              <img class="supported-apps-icons" src="./assets/platform_logos/fb-messenger_logo.png" alt="Facebook Messenger" style="margin: 0px 20px" />
+            </a>
+            <a href="https://coda.io/d/Remembered-Chat_dMiQtdCTzgw/How-to-export-your-chat-data-from-WhatsApp_su4F7" target="_blank">
+              <img class="supported-apps-icons" src="./assets/platform_logos/whatsapp_logo.png" alt="WhatsApp" style="margin: 0px 20px" />
+            </a>
+          </div>
+          <div class="cell">
+            <div class="grid-y grid-margin-y">
+              <div class="cell">
+                <h4>Coming soon</h4>
+              </div>
+              <div class="cell">
+                <img class="coming-soon-apps-icons" src="./assets/platform_logos/google-photos_logo.png" alt="Google Photos" style="margin: 0px 20px" />
+                <img class="coming-soon-apps-icons" src="./assets/platform_logos/gmail_logo.png" alt="Email" style="margin: 0px 20px" />
+                <img class="coming-soon-apps-icons" src="./assets/platform_logos/imessage_logo.png" alt="iMessage" style="margin: 0px 20px" />
+              </div>
+              <div class="cell">
+                <img class="coming-soon-apps-icons" src="./assets/platform_logos/signal_logo.png" alt="Signal" style="margin: 0px 20px" />
+                <img class="coming-soon-apps-icons" src="./assets/platform_logos/telegram_logo.png" alt="Telegram" style="margin: 0px 20px" />
+                <img class="coming-soon-apps-icons" src="./assets/platform_logos/wechat_logo.png" alt="Wechat" style="margin: 0px 20px" />
+              </div>
+              <div class="cell hide-for-large">
+                <a class="button dark-button" data-smooth-scroll>Consolidate Your Chats</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-
-  <hr>
-
-  <!-- SECTION: PRIVACY -->
-  <div class="grid-y section" id="privacy">
-    <div class="cell">
-      <div class="grid-container">
-        <div class="cell">
-          <div class="grid-y grid-margin-y">
-            <div class="cell">
-              <h2 class="heading-text">Complete Data Privacy 🔒</h3>
-            </div>
-            <div class="cell">
-              <h3>Own Your Data 100% locally</h3>
-            </div>
-            <div class="cell">
-              <h3>No Tracking of Your Private Data</h3>
-            </div>
-            <div class="cell">
-              <h3>No Ads, Now or Ever</h3>
-            </div>
-            <div class="cell">
-              <a href="#sign-up-anchor" class="button dark-button" data-smooth-scroll>Store Your Memories</a>
-            </div>
+      <div class="cell hide-for-large">
+        <hr>
+      </div>
+      <!-- SECTION: PRIVACY -->
+      <div class="cell large-6" id="privacy">
+        <div class="grid-y" style="height: 100%">
+          <div class="cell">
+            <h2 class="heading-text">Complete Data Privacy</h3>
           </div>
-
+          <div class="cell auto"></div>
+          <div class="cell">
+            <h3>Own Your Data</h3>
+          </div>
+          <div class="cell">
+            <h3>No Private Data Tracking</h3>
+          </div>
+          <div class="cell">
+            <h3>No Ads Now or Ever</h3>
+          </div>
+          <div class="cell">
+            <h4>All messages and media are stored locally on your device</h3>
+          </div>
+          <div class="cell">
+            <h4>Nothing is sent over over the web, or stored in servers</h3>
+          </div>
+          <div class="cell auto show-for-large"></div>
+          <div class="cell hide-for-large">
+            <a class="button dark-button" data-smooth-scroll>Store Your Memories</a>
+          </div>
         </div>
-
+      </div>
+      <div class="cell">
+        <div class="grid-x">
+          <div class="cell large-6 show-for-large">
+            <a class="button dark-button" data-smooth-scroll>Consolidate Your Chats</a>
+          </div>
+          <div class="cell large-6 show-for-large">
+            <a class="button dark-button" data-smooth-scroll>Store Your Memories</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -152,26 +163,25 @@
       <div class="grid-container">
         <div class="grid-y grid-margin-y align-middle">
           <div class="cell">
-            <div class="grid-y grid-margin-y">
-              <div class="cell">
-                <h2 class="heading-text">Go Back in Time ⏳</h3>
-              </div>
-              <div class="cell image">
-                <img id="calendar_img" src="assets/search-calendar.png" alt="selecting chat by date in the app">
-              </div>
-              <div class="cell">
-                <h3>View messages & media chronologically.</h3>
-              </div>
-              <div class="cell">
-                <h3>Search messages across all chat platforms.</h3>
-              </div>
-              <div class="cell">
-                <h3>Jump to any message in the past by date.</h3>
-              </div>
-              <div class="cell">
-                <a href="#sign-up-anchor" class="button dark-button" data-smooth-scroll>Find Your Memories</a>
-              </div>
-            </div>
+            <h2 class="heading-text">Go Back in Time</h3>
+          </div>
+          <div class="cell image show-for-large">
+            <img id="calendar_img" src="assets/search-calendar.png" alt="selecting chat by date in the app">
+          </div>
+          <div class="cell image hide-for-large">
+            <img id="calendar_img" src="assets/search-calendar-vertical.png" alt="selecting chat by date in the app">
+          </div>
+          <div class="cell">
+            <h3>View messages & media chronologically.</h3>
+          </div>
+          <div class="cell">
+            <h3>Search messages across all chat platforms.</h3>
+          </div>
+          <div class="cell">
+            <h3>Jump to any message in the past by date.</h3>
+          </div>
+          <div class="cell">
+            <a href="#sign-up-anchor" class="button dark-button" data-smooth-scroll>Find Your Memories</a>
           </div>
         </div>
       </div>
@@ -189,7 +199,7 @@
             <h2 class="heading-text">Create Your Memory Collection</h3>
           </div>
           <div class="cell image">
-            <img id="memory_img" src="assets/memory-movies.png" alt="image of memory movies in the app">
+            <img id="memory_img" src="assets/bookmark-feature.png" alt="image of bookmarks feature in the app" style="max-height: 45rem">
           </div>
           <div class="cell">
             <h3>Bookmark your favorite conversations.</h3>
@@ -218,21 +228,55 @@
           <div class="cell">
             <ul class="accordion" data-accordion data-allow-all-closed="true">
               <li class="accordion-item" data-accordion-item>
-                <a href="#" class="accordion-title">Question 1</a>
+                <a href="#" class="accordion-title">Is Remembered free to use?</a>
+                <div class="accordion-content" data-tab-content>
+                  <p>Remembered is currently in Alpha and is 100% free to use. In the future, Remembered will be a paid app, but we will never put ads in the app or sell your data to make money. The new pricing model will help us support the development of the software without sacrificing our values for respecting the privacy of our users.</p>
+                </div>
+              </li>
+              <li class="accordion-item" data-accordion-item>
+                <a href="#" class="accordion-title">What desktop or mobile devices can I use Remembered on?</a>
+                <div class="accordion-content" data-tab-content>
+                  <p>Remembered is a desktop app that you can use on both Windows and Mac computers.</p>
+                </div>
+              </li>
+              <li class="accordion-item" data-accordion-item>
+                <a href="#" class="accordion-title">Where are my messages stored?</a>
+                <div class="accordion-content" data-tab-content>
+                  <p>Your messages are stored locally on your desktop computer within the application. All photos, videos, audio messages and other medias such as file attachments are stored in your home folder, in the "Remembered" subfolder.</p>
+                  <p>To find your media files, navigate to the following folder:</p>
+                  <p><b>Windows:</b></p>
+                  <p><b>Mac:</b> ~/Remembered</p>
+                </div>
+              </li>
+              <li class="accordion-item" data-accordion-item>
+                <a href="#" class="accordion-title">Can other people read my chat messages?</a>
+                <div class="accordion-content" data-tab-content>
+                  <p>No one except you can read your messages.</p>
+                </div>
+              </li>
+              <li class="accordion-item" data-accordion-item>
+                <a href="#" class="accordion-title">How long will my messages be stored?</a>
                 <div class="accordion-content" data-tab-content>
                   <p>Panel 1. Lorem ipsum dolor</p>
                   <a href="#">Nowhere to Go</a>
                 </div>
               </li>
               <li class="accordion-item" data-accordion-item>
-                <a href="#" class="accordion-title">Question 2</a>
+                <a href="#" class="accordion-title">Are my messages synced across my devices?</a>
                 <div class="accordion-content" data-tab-content>
                   <p>Panel 1. Lorem ipsum dolor</p>
                   <a href="#">Nowhere to Go</a>
                 </div>
               </li>
               <li class="accordion-item" data-accordion-item>
-                <a href="#" class="accordion-title">Question 3</a>
+                <a href="#" class="accordion-title">Can Remembered combine chats from different apps?</a>
+                <div class="accordion-content" data-tab-content>
+                  <p>Panel 1. Lorem ipsum dolor</p>
+                  <a href="#">Nowhere to Go</a>
+                </div>
+              </li>
+              <li class="accordion-item" data-accordion-item>
+                <a href="#" class="accordion-title">How do I uninstall Remembered and delete my data?</a>
                 <div class="accordion-content" data-tab-content>
                   <p>Panel 1. Lorem ipsum dolor</p>
                   <a href="#">Nowhere to Go</a>
@@ -248,6 +292,8 @@
     </div>
   </div>
 
+  <hr>
+
   <!-- SECTION: SIGN UP -->
   <div class="grid-y" id="social-media">
     <div class="cell">
@@ -259,18 +305,18 @@
               <p>A collection of the parts of the Internet dedicated to Remembered.</p>
             </div>
             <div class="cell" id="community-websites">
-              <div class="grid-x">
-                <div class="cell small-4" id="community-link">
+              <div class="grid-x grid-margin-x">
+                <div class="cell medium-4 community-link">
                   <a href="https://twitter.com/RememberedApp" target="_blank"><img src="./assets/social_icons/Twitter-icon.png" class="social-media-icon" /></a>
                   <h3>@RememberedApp on Twitter</h3>
                   <p>Tweet some awesome memories!</p>
                 </div>
-                <div class="cell small-4" id="community-link">
+                <div class="cell medium-4 community-link">
                   <a href="https://www.reddit.com/r/RememberedApp/" target="_blank"><img src="./assets/social_icons/reddit-logo.png" class="social-media-icon" /></a>
                   <h3>r/RememberedApp on Reddit</h3>
                   <p>Join the official subreddit for Remembered!</p>
                 </div>
-                <div class="cell small-4" id="community-link">
+                <div class="cell medium-4 community-link">
                   <a href="https://www.facebook.com/profile.php?id=100092335401422" target="_blank"><img src="./assets/social_icons/Facebook-logo.png" class="social-media-icon" /></a>
                   <h3>Remembered on Facebook</h3>
                   <p>Post your thoughts on our Facebook page!</p>
