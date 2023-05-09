@@ -222,7 +222,6 @@ div#movie-view img#movie-view {
 }
 
 /* section: faq */
-
 div#faq .accordion {
   text-align: left;
 }
@@ -231,7 +230,6 @@ div#faq .accordion {
   max-width: 70%;
   margin: auto;
   background-color: inherit;
-
 }
 
 div#faq li.accordion-item a {
@@ -284,14 +282,39 @@ div#sign-up div.grid-container {
   margin: auto;
 }
 
-div#sign-up h2{
-    padding-bottom: 30px;
+/* section: social media */
+div#social-media {
+  background-color: var(--cream);
+  color: var(--dark-purple);
+  padding: 100px 0px 100px 0px;
+  text-align: center;
+}
+
+div#community-intro h2{
+  padding-bottom: 1rem;
 }
 
 div#sign-up input{
   color: var(--primary-dark);
   border: none;
   margin: 0;
+}
+
+div#community-intro {
+    padding-bottom: 1rem;
+}
+
+div#community-link {
+    text-align: center;
+}
+
+div#community-link img {
+    margin-bottom: 1rem;
+}
+
+img.social-media-icon {
+    width: 120px;
+    height: 120px;
 }
 
 div#sign-up input::placeholder {
