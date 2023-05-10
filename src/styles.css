@@ -135,7 +135,8 @@ div.section div.grid-margin-y div.cell {
 /* input styles */
 input, input[type="text"], input[type="email"] {
     height: 2.6rem;
-    border-color: var(--primary-dark)
+    border-color: var(--primary-dark);
+    border-radius: 5px;
 }
 
 input[type="email"] {
@@ -152,6 +153,7 @@ input[type="email"] {
   color: var(--primary-light);
   border: var(--primary) 1px solid;
   margin: 0.5rem 0 0.5rem 0;
+  border-radius: 30px;
 }
 
 .button:hover, .button:focus {
@@ -329,7 +331,7 @@ div#faq li.accordion-item a {
   border: none;
   font-size: inherit;
   color: var(--primary-dark);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 div#faq li.accordion-item a.accordion-title {
@@ -429,7 +431,7 @@ div#sign-up button#email-form {
 /* Download Page */
 div#download.section {
   margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 div#download div.grid-container {
@@ -443,14 +445,14 @@ div#download input::placeholder {
 
 div#download div#download-buttons button {
   width: 100%;
-  height: 100px;
+  height: 60px;
   padding: 0;
   text-align: center;
 }
 
 div#download div.grid-x div.cell {
   height: 100px;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 /* Medium Screen */
