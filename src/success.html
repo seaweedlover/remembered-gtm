@@ -61,44 +61,7 @@
   <!-- SECTION: DOWNLOAD -->
   <div class="grid-y grid-margin-y section" id="download">
     <div class="cell" style="margin-bottom: 3rem;">
-      <h1>Download for Desktop</h1>
-      v0.1.5-alpha (YYYY-MM-DD)
-    </div>
-    <div class="cell">
-      <div class="grid-container">
-        <form name="download-signup" method="POST" action="./success" enctype="application/x-www-form-urlencoded" netlify>
-          <div class="grid-y align-middle grid-margin-y">
-            <div class="cell">
-              <input type="email" placeholder="Your email address..." name="email">
-              <div style="text-align: left;">
-                <label class="container">Sign up for email updates
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-              </div>
-            </div>
-            <div class="cell" id="download-buttons">
-              <div class="grid-x grid-margin-x align-middle">
-                <div class="cell">
-                  <a href="./assets/app_releases/Remembered-0.1.4-alpha-x64.dmg">
-                    <button type="submit" class="button light-button">MacOS Intel</button>
-                  </a>
-                </div>
-                <div class="cell">
-                  <a href="./assets/app_releases/Remembered-0.1.4-alpha-arm64.dmg">
-                    <button type="submit" class="button light-button">MacOS M1</button>
-                  </a>
-                </div>
-                <div class="cell">
-                  <a href="./assets/app_releases/Remembered-0.1.1-alpha-windows.exe">
-                    <button type="submit" class="button light-button">Windows</button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
+      <h1>Thank You for Downloading Remembered!</h1>
     </div>
   </div>
 
@@ -126,6 +89,11 @@
   <script>
     /* initialize all foundation plugins */
     $(document).foundation();
+    $(document).ready(function () {
+      var url = "./assets/app_releases/Remembered-0.1.4-alpha-x64.dmg";
+      var w = window.open(url, '_blank');
+      w.focus();
+    })
   </script>
 
 </body>
