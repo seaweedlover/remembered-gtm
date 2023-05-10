@@ -524,4 +524,8 @@ div#download div.grid-x div.cell {
   div#sign-up div.grid-container {
     max-width: 100%;
   }
+
+  div#home-footer {
+    padding-bottom: 3rem;
+  }
 }
