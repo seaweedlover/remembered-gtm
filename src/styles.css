@@ -502,19 +502,22 @@ div#download div.grid-x div.cell {
 
 /* Small Screen */
 @media screen and (max-width: 40rem) {
+  .button {
+    padding: 1rem 3rem;
+  }
   /* sticky nav */
   div.title-bar-right a.button {
     font-size: .8rem;
     padding: .85rem 1rem;
   }  
   
-  form#supported-apps input {
-    max-width: 100%;
-    margin-bottom: 1rem;
+  /* supported apps */
+  div#supported-apps img.supported-apps-icons {
+    max-height: 50px;
   }
 
   /* Download Page */
-div#download div.grid-container {
-  max-width: 90%;
-}
+  div#download div.grid-container {
+    max-width: 90%;
+  }
 }
