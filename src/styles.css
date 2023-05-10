@@ -384,6 +384,10 @@ div#social-media {
   text-align: center;
 }
 
+div#success-social-media {
+  padding: 3rem 0rem;
+}
+
 div#community-intro h2{
   padding-bottom: 1rem;
 }
