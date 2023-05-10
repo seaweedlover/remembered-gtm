@@ -11,6 +11,10 @@ body {
     color: var(--primary-dark)
 }
 
+a, a:hover {
+  color: inherit;
+}
+
 h1 {
     font-size: 3rem;
 }
@@ -40,6 +44,80 @@ hr {
     max-width: 65%;
 }
 
+label {
+  color: inherit;
+}
+
+/* custom checkbox css */
+ /* Customize the label (the container) */
+ .container {
+  display: block;
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 36px;
+  width: 36px;
+  border-radius: 5px;
+  border: var(--primary) 1px solid;
+}
+
+/* On mouse-over, add a light background color */
+.container:hover input ~ .checkmark {
+  border: var(--primary-dark) 1px solid;
+}
+
+/* When the checkbox is checked, add a background */
+.container input:checked ~ .checkmark {
+  background-color: var(--primary);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 11px;
+  top: 2px;
+  width: 13px;
+  height: 25px;
+  border: solid var(--primary-light);
+  border-width: 0 5px 5px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+} 
+
 /* all sections */
 div.section {
   margin: 6rem 0rem;
@@ -57,7 +135,6 @@ div.section div.grid-margin-y div.cell {
 /* input styles */
 input, input[type="text"], input[type="email"] {
     height: 2.6rem;
-    border-radius: .5rem;
     border-color: var(--primary-dark)
 }
 
@@ -73,14 +150,15 @@ input[type="email"] {
   padding: 1rem 5rem;
   background-color: var(--primary);
   color: var(--primary-light);
+  border: var(--primary) 1px solid;
   margin: 0.5rem 0 0.5rem 0;
 }
 
 .button:hover, .button:focus {
-  background-color: var(--white);
-  color: var(--primary-dark);
+  background-color: var(--primary-dark);
+  color: var(--primary-light);
   border: 1px solid;
-  border-color: var(--primary-dark);
+  border-color: var(--primary-light);
 }
 
 /* menu title bar */
@@ -251,7 +329,7 @@ div#faq li.accordion-item a {
   border: none;
   font-size: inherit;
   color: var(--primary-dark);
-  font-weight: bold;
+  font-weight: 500;
 }
 
 div#faq li.accordion-item a.accordion-title {
@@ -274,9 +352,9 @@ div#footer {
   background-color: var(--primary-light);
   color: var(--primary-dark);
   text-align: center;
-  padding: 2rem 0rem 7rem 0rem;
+  padding: 2rem 0rem 0rem 0rem;
   font-size: 1rem;
-  margin-bottom: 0rem;
+  margin-bottom: 0px;
 }
 
 div#footer a {
@@ -314,6 +392,7 @@ div#sign-up input{
   color: var(--primary-dark);
   border: none;
   margin: 0;
+  height: 42px;
 }
 
 div#community-intro {
@@ -338,7 +417,34 @@ div#sign-up input::placeholder {
 }
 
 div#sign-up button#email-form {
-  padding: 1rem 2rem;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 42px;
+}
+
+/* Download Page */
+div#download.section {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+div#download div.grid-container {
+  max-width: 50%;
+}
+
+div#download input::placeholder {
+  color: var(--primary-dark)
+}
+
+div#download div#download-buttons button {
+  width: 100%;
+  height: 100px;
+  padding: 0;
+  text-align: center;
+}
+
+div#download div.grid-x div.cell {
+  height: 100px;
+  margin-bottom: 2rem;
 }
 
 /* Medium Screen */
@@ -386,6 +492,12 @@ div#sign-up button#email-form {
       max-width: 90%;
     }
 
+    /* Download Page */
+    div#download div.grid-container {
+      max-width: 70%;
+    }
+
+
 }
 
 /* Small Screen */
@@ -400,4 +512,9 @@ div#sign-up button#email-form {
     max-width: 100%;
     margin-bottom: 1rem;
   }
+
+  /* Download Page */
+div#download div.grid-container {
+  max-width: 90%;
+}
 }

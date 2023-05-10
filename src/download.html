@@ -1,0 +1,133 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Remembered - Download</title>
+  <link rel="icon" type="image/png" href="assets/app-icon-1x.png" />
+  <meta name="digital memories" content="HTML, CSS, JavaScript">
+  <meta name="Remembered app - keep digital memories forever" content="Remembered is an app that allows you to keep & view your memories across major chat apps in one place">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WFRFVW2');</script>
+  <!-- End Google Tag Manager -->
+
+  <link rel="stylesheet" href="foundation/css/foundation.min.css" />
+  <link rel="stylesheet" href="foundation/css/app.css" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <script src="https://kit.fontawesome.com/30bcb02acf.js" crossorigin="anonymous"></script>
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-90HNGHSX2G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-90HNGHSX2G');
+</script>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WFRFVW2" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- STICKY NAV MENU -->
+  <!-- <div data-sticky-container> -->
+  <div class="title-bar" id="menu" data-options="marginTop:0;">
+    <a href="./index.html">
+      <div class="app-icon-box">
+        <div>
+          <img id="app_icon_img" src="assets/app-icon-1x.png" alt="Remembered app icon">
+        </div>
+        <div class="title-bar-left">
+          REMEMBERED
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <!-- SECTION: DOWNLOAD -->
+  <div class="grid-y grid-margin-y section" id="download">
+    <div class="cell" style="margin-bottom: 3rem;">
+      <h1>Download for Desktop</h1>
+      v0.1.5-alpha (YYYY-MM-DD)
+    </div>
+    <div class="cell">
+      <div class="grid-container">
+        <form name="footer-signup" method="POST" enctype="application/x-www-form-urlencoded" netlify>
+          <div class="grid-y align-middle grid-margin-y">
+            <div class="cell">
+              <input type="email" placeholder="Your email address..." name="email">
+              <div style="text-align: left;">
+                <label class="container">Sign up for email updates
+                  <input type="checkbox" checked="checked">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="cell" id="download-buttons" style="padding: 1rem">
+      <div class="grid-x grid-margin-x align-middle">
+        <div class="cell medium-4">
+          <a href="./assets/app_releases/Remembered-0.1.4-alpha-x64.dmg">
+            <button class="button light-button">MacOS Intel</button>
+          </a>
+        </div>
+        <div class="cell medium-4">
+          <a href="./assets/app_releases/Remembered-0.1.4-alpha-arm64.dmg">
+            <button class="button light-button">MacOS M1</button>
+          </a>
+        </div>
+        <div class="cell medium-4">
+          <a href="./assets/app_releases/Remembered-0.1.1-alpha-windows.exe">
+            <button class="button light-button">Windows</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION: FOOTER -->
+  <div class="grid-y section" id="footer">
+    <div class="cell">
+      <div class="grid-container">
+        <div class="grid-y">
+          <div class="cell">
+            <div class="cell">© 2023 Lux Ex Machina | <i class="fa-solid fa-envelope" style="color: #754BA3;"></i> <a href="mailto:remembered.app@gmail.com">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT -->
+  <script src="foundation/js/vendor/jquery.js"></script>
+  <script src="foundation/js/vendor/what-input.js"></script>
+  <script src="foundation/js/vendor/foundation.js"></script>
+  <script src="foundation/js/app.js"></script>
+  <script src="script.js"></script>
+
+  <script>
+    /* initialize all foundation plugins */
+    $(document).foundation();
+  </script>
+
+</body>
+
+</html>
