@@ -128,24 +128,6 @@
   <script>
     /* initialize all foundation plugins */
     $(document).foundation();
-    $(document).ready(function () {
-      var intel_url = "./assets/app_releases/Remembered-0.1.4-alpha-x64.dmg";
-      var apple_url = "./assets/app_releases/Remembered-0.1.4-alpha-arm64.dmg";
-      var windows_url = "./assets/app_releases/Remembered-0.1.1-alpha-windows.exe";
-
-      $('#mac-intel-download').click(function() {
-        var w = window.open(intel_url, '_blank');
-        w.focus();
-      });
-      $('#mac-as-download').click(function() {
-        var w = window.open(apple_url, '_blank');
-        w.focus();
-      });
-      $('#windows-download').click(function() {
-        var w = window.open(windows_url, '_blank');
-        w.focus();
-      });
-    })
   </script>
 
 </body>
