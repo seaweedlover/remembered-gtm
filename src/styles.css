@@ -129,7 +129,7 @@ div.section img {
 }
 
 div.section div.grid-margin-y div.cell {
-  margin: 1rem 0rem;
+  margin: 1rem inherit;
 }
 
 /* input styles */
@@ -427,8 +427,10 @@ div#download.section {
   margin-top: 2rem;
   margin-bottom: 3rem;
 }
+
 div#download div.grid-container {
-  max-width: 50%;
+  max-width: 650px;
+  padding: 1rem;
 }
 
 div#download input::placeholder {
@@ -496,13 +498,6 @@ div#download div.grid-x div.cell {
     div#sign-up div.grid-container {
       max-width: 100%;
     }
-
-    /* Download Page */
-    div#download div.grid-container {
-      max-width: 70%;
-    }
-
-
 }
 
 /* Small Screen */
@@ -524,10 +519,5 @@ div#download div.grid-x div.cell {
   /* Sign up */
   div#sign-up div.grid-container {
     max-width: 100%;
-  }
-
-  /* Download Page */
-  div#download div.grid-container {
-    max-width: 90%;
   }
 }
